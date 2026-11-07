@@ -1,0 +1,15 @@
+doc_id,pack,doc_type,pages,chars,est_tokens,chunks,text_layer
+PACK000001_01_broker_submission_email,PACK000001,broker_submission_email,1,1982,495,3,True
+PACK000001_02_loss_run_report,PACK000001,loss_run_report,1,1464,366,2,True
+PACK000001_03_statement_of_values,PACK000001,statement_of_values,1,1095,273,1,True
+PACK000001_04_policy_schedule,PACK000001,policy_schedule,1,1678,419,2,True
+PACK000001_06_insurance_application,PACK000001,insurance_application,2,2857,714,4,True
+PACK000001_07_fnol_form,PACK000001,fnol_form,2,2132,533,3,True
+PACK000001_08_claim_report,PACK000001,claim_report,1,1464,366,2,True
+PACK000002_01_broker_submission_email,PACK000002,broker_submission_email,1,1547,386,3,True
+PACK000002_02_loss_run_report,PACK000002,loss_run_report,1,1466,366,2,True
+PACK000002_03_statement_of_values,PACK000002,statement_of_values,1,1426,356,2,True
+PACK000002_04_policy_schedule,PACK000002,policy_schedule,1,1246,311,2,True
+PACK000002_05_certificate_of_currency,PACK000002,certificate_of_currency,1,1211,302,1,True
+PACK000002_06_insurance_application,PACK000002,insurance_application,2,2617,654,3,True
+PACK000002_07_fnol_form,PACK000002,fnol_form,2,2225,556,3,True

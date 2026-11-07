@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Environments and secrets
+venv/
+.venv/
+.env
+
+# LLM call cache and derived artefacts (rebuilt by the pipeline)
+cache/
+data/interim/
+chroma/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store

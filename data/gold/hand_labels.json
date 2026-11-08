@@ -1,0 +1,134 @@
+{
+  "_about": "Hand labels added on top of the dataset-derived gold (src/gold.py). Labelled by reading the clean PDF text of each document. 'add' = items the dataset does not label; 'remove' = dataset fields repeated on the row but NOT printed in this document (type + key); 'relationships' = all relationships (the dataset has none). Relationship objects: party = name as printed, coverage = canonical type, location = location number, claim = claim number.",
+  "PACK000001_02_loss_run_report": {
+    "relationships": [
+      ["PI-2025-981268", "HAS_INSURED", "Greenleaf Property Services Pty Ltd", 1],
+      ["PI-2025-981268", "ISSUED_BY", "Pinewood Insurance Underwriting Agency", 1],
+      ["PI-2025-981268", "HAS_CLAIM", "CLM-2020-27293", 1],
+      ["PI-2025-981268", "HAS_CLAIM", "CLM-2021-94769", 1],
+      ["PI-2025-981268", "HAS_CLAIM", "CLM-2022-56562", 1],
+      ["PI-2025-981268", "HAS_CLAIM", "CLM-2023-10762", 1]
+    ]
+  },
+  "PACK000001_03_statement_of_values": {
+    "add": {
+      "dates": [{"kind": "valuation_date", "date": "2025-05-13", "page": 1}]
+    },
+    "relationships": [
+      ["PI-2025-981268", "HAS_INSURED", "Greenleaf Property Services Pty Ltd", 1],
+      ["PI-2025-981268", "PLACED_BY", "Ridgeline Insurance Brokers Pty Ltd", 1],
+      ["PI-2025-981268", "COVERS_LOCATION", "1", 1],
+      ["PI-2025-981268", "COVERS_LOCATION", "2", 1]
+    ]
+  },
+  "PACK000001_04_policy_schedule": {
+    "relationships": [
+      ["PI-2025-981268", "HAS_INSURED", "Greenleaf Property Services Pty Ltd", 1],
+      ["PI-2025-981268", "ISSUED_BY", "Pinewood Insurance Underwriting Agency", 1],
+      ["PI-2025-981268", "PLACED_BY", "Ridgeline Insurance Brokers Pty Ltd", 1],
+      ["PI-2025-981268", "HAS_COVERAGE", "public_liability", 1],
+      ["PI-2025-981268", "HAS_COVERAGE", "property", 1],
+      ["PI-2025-981268", "HAS_COVERAGE", "professional_indemnity", 1],
+      ["PI-2025-981268", "HAS_COVERAGE", "business_interruption", 1],
+      ["PI-2025-981268", "HAS_COVERAGE", "cyber", 1],
+      ["PI-2025-981268", "COVERS_LOCATION", "1", 1],
+      ["PI-2025-981268", "COVERS_LOCATION", "2", 1]
+    ]
+  },
+  "PACK000001_06_insurance_application": {
+    "add": {
+      "claims": [
+        {"claim_no": "CLM-2020-27293", "loss_date": "2020-09-24", "category": "liability notification", "status": "Closed", "incurred": 21187, "page": 1},
+        {"claim_no": "CLM-2021-94769", "loss_date": "2021-12-02", "category": "property damage", "status": "Closed", "incurred": 28494, "page": 1},
+        {"claim_no": "CLM-2022-56562", "loss_date": "2022-03-05", "category": "liability notification", "status": "Closed", "incurred": 72781, "page": 1},
+        {"claim_no": "CLM-2023-10762", "loss_date": "2023-08-08", "category": "theft", "status": "Open", "incurred": 43520, "page": 1}
+      ]
+    },
+    "relationships": []
+  },
+  "PACK000001_07_fnol_form": {
+    "relationships": [
+      ["PI-2025-981268", "HAS_INSURED", "Greenleaf Property Services Pty Ltd", 1],
+      ["PI-2025-981268", "ISSUED_BY", "Pinewood Insurance Underwriting Agency", 1],
+      ["PI-2025-981268", "HAS_CLAIM", "CLM-2023-10762", 1]
+    ]
+  },
+  "PACK000001_08_claim_report": {
+    "relationships": [
+      ["PI-2025-981268", "HAS_INSURED", "Greenleaf Property Services Pty Ltd", 1],
+      ["PI-2025-981268", "ISSUED_BY", "Pinewood Insurance Underwriting Agency", 1],
+      ["PI-2025-981268", "HAS_CLAIM", "CLM-2022-56562", 1]
+    ]
+  },
+  "PACK000002_01_broker_submission_email": {
+    "remove": [
+      ["party", "insurer"],
+      ["coverage", "*"]
+    ],
+    "relationships": []
+  },
+  "PACK000002_02_loss_run_report": {
+    "relationships": [
+      ["SC-2025-372491", "HAS_INSURED", "Tide Gym Pty Ltd", 1],
+      ["SC-2025-372491", "ISSUED_BY", "Southern Cross Commercial Underwriters Pty Ltd", 1],
+      ["SC-2025-372491", "HAS_CLAIM", "CLM-2024-74176", 1],
+      ["SC-2025-372491", "HAS_CLAIM", "CLM-2024-94098", 1],
+      ["SC-2025-372491", "HAS_CLAIM", "CLM-2025-13385", 1]
+    ]
+  },
+  "PACK000002_03_statement_of_values": {
+    "add": {
+      "dates": [{"kind": "valuation_date", "date": "2025-10-03", "page": 1}]
+    },
+    "relationships": [
+      ["SC-2025-372491", "HAS_INSURED", "Tide Gym Pty Ltd", 1],
+      ["SC-2025-372491", "PLACED_BY", "Summit Risk Brokers Pty Ltd", 1],
+      ["SC-2025-372491", "COVERS_LOCATION", "1", 1],
+      ["SC-2025-372491", "COVERS_LOCATION", "2", 1],
+      ["SC-2025-372491", "COVERS_LOCATION", "3", 1],
+      ["SC-2025-372491", "COVERS_LOCATION", "4", 1],
+      ["SC-2025-372491", "COVERS_LOCATION", "5", 1]
+    ]
+  },
+  "PACK000002_04_policy_schedule": {
+    "remove": [
+      ["location", "*"]
+    ],
+    "relationships": [
+      ["SC-2025-372491", "HAS_INSURED", "Tide Gym Pty Ltd", 1],
+      ["SC-2025-372491", "ISSUED_BY", "Southern Cross Commercial Underwriters Pty Ltd", 1],
+      ["SC-2025-372491", "PLACED_BY", "Summit Risk Brokers Pty Ltd", 1],
+      ["SC-2025-372491", "HAS_COVERAGE", "public_liability", 1],
+      ["SC-2025-372491", "HAS_COVERAGE", "property", 1],
+      ["SC-2025-372491", "HAS_COVERAGE", "business_interruption", 1],
+      ["SC-2025-372491", "HAS_COVERAGE", "management_liability", 1]
+    ]
+  },
+  "PACK000002_05_certificate_of_currency": {
+    "relationships": [
+      ["SC-2025-372491", "HAS_INSURED", "Tide Gym Pty Ltd", 1],
+      ["SC-2025-372491", "ISSUED_BY", "Southern Cross Commercial Underwriters Pty Ltd", 1],
+      ["SC-2025-372491", "HAS_COVERAGE", "public_liability", 1],
+      ["SC-2025-372491", "HAS_COVERAGE", "property", 1],
+      ["SC-2025-372491", "HAS_COVERAGE", "business_interruption", 1],
+      ["SC-2025-372491", "HAS_COVERAGE", "management_liability", 1]
+    ]
+  },
+  "PACK000002_06_insurance_application": {
+    "add": {
+      "claims": [
+        {"claim_no": "CLM-2024-74176", "loss_date": "2024-05-29", "category": "motor collision", "status": "Closed", "incurred": 9106, "page": 1},
+        {"claim_no": "CLM-2024-94098", "loss_date": "2024-09-12", "category": "water damage", "status": "Closed", "incurred": 61365, "page": 1},
+        {"claim_no": "CLM-2025-13385", "loss_date": "2025-03-18", "category": "liability notification", "status": "Closed", "incurred": 46544, "page": 1}
+      ]
+    },
+    "relationships": []
+  },
+  "PACK000002_07_fnol_form": {
+    "relationships": [
+      ["SC-2025-372491", "HAS_INSURED", "Tide Gym Pty Ltd", 1],
+      ["SC-2025-372491", "ISSUED_BY", "Southern Cross Commercial Underwriters Pty Ltd", 1],
+      ["SC-2025-372491", "HAS_CLAIM", "CLM-2025-13385", 1]
+    ]
+  }
+}

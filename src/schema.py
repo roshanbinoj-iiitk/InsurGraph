@@ -7,14 +7,14 @@ pipeline after extraction so the graph has page-level provenance.
 
 from __future__ import annotations
 
-from enum import Enum
+from enum import StrEnum
 
 from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 from src.normalize import norm_date, norm_money
 
 
-class PartyRole(str, Enum):
+class PartyRole(StrEnum):
     insured = "insured"
     insurer = "insurer"
     broker = "broker"
@@ -23,7 +23,7 @@ class PartyRole(str, Enum):
     loss_adjuster = "loss_adjuster"
 
 
-class DateKind(str, Enum):
+class DateKind(StrEnum):
     policy_start = "policy_start"
     policy_end = "policy_end"
     valuation_date = "valuation_date"
@@ -31,7 +31,7 @@ class DateKind(str, Enum):
     report_date = "report_date"
 
 
-class Predicate(str, Enum):
+class Predicate(StrEnum):
     HAS_INSURED = "HAS_INSURED"
     ISSUED_BY = "ISSUED_BY"
     PLACED_BY = "PLACED_BY"

@@ -64,7 +64,8 @@ def main() -> None:
 
     gt = [json.loads(line) for line in open(RAW_DIR / "ground_truth.jsonl")]
     print("\nGround-truth rows:", len(gt))
-    print("red flags:", [(r["submission_pack_id"], f["flag_type"]) for r in gt[:1] + gt[7:8] for f in json.loads(r["red_flags_json"])])
+    flags = {(r["submission_pack_id"], f["flag_type"]) for r in gt for f in json.loads(r["red_flags_json"])}
+    print("red flags:", sorted(flags))
 
 
 if __name__ == "__main__":

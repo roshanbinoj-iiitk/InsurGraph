@@ -5,7 +5,7 @@ description = "LLM extraction, knowledge graph, RAG and evaluation over syntheti
 requires-python = ">=3.12"
 
 [tool.ruff]
-line-length = 110
+line-length = 120
 target-version = "py312"
 
 [tool.ruff.lint]

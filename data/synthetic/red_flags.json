@@ -1,0 +1,90 @@
+{
+  "SYNDEV001": [
+    {
+      "flag_type": "abn_formatting_inconsistency",
+      "target_doc_type": "statement_of_values",
+      "overrides": {
+        "displayed_abn": "77220074584"
+      }
+    }
+  ],
+  "SYNDEV002": [
+    {
+      "flag_type": "abn_formatting_inconsistency",
+      "target_doc_type": "statement_of_values",
+      "overrides": {
+        "displayed_abn": "92762501283"
+      }
+    },
+    {
+      "flag_type": "loss_date_outside_policy_period",
+      "target_doc_type": "loss_run_report",
+      "overrides": {
+        "claim_index": 1,
+        "displayed_loss_date": "2027-07-12"
+      }
+    }
+  ],
+  "SYNDEV003": [
+    {
+      "flag_type": "policy_number_mismatch",
+      "target_doc_type": "certificate_of_currency",
+      "overrides": {
+        "displayed_policy_number": "HM-2026-579713"
+      }
+    },
+    {
+      "flag_type": "sov_total_mismatch",
+      "target_doc_type": "statement_of_values",
+      "overrides": {
+        "displayed_total_delta": 834000
+      }
+    }
+  ],
+  "SYNTEST001": [
+    {
+      "flag_type": "loss_date_outside_policy_period",
+      "target_doc_type": "loss_run_report",
+      "overrides": {
+        "claim_index": 1,
+        "displayed_loss_date": "2028-10-06"
+      }
+    }
+  ],
+  "SYNTEST002": [
+    {
+      "flag_type": "loss_date_outside_policy_period",
+      "target_doc_type": "loss_run_report",
+      "overrides": {
+        "claim_index": 1,
+        "displayed_loss_date": "2028-02-18"
+      }
+    },
+    {
+      "flag_type": "limit_mismatch",
+      "target_doc_type": "certificate_of_currency",
+      "overrides": {
+        "coverage": "public_liability",
+        "displayed_limit": 5000000
+      }
+    }
+  ],
+  "SYNTEST003": [
+    {
+      "flag_type": "currency_mismatch",
+      "target_doc_type": "statement_of_values",
+      "overrides": {
+        "loc_index": 0,
+        "currency": "USD"
+      }
+    },
+    {
+      "flag_type": "loss_date_outside_policy_period",
+      "target_doc_type": "loss_run_report",
+      "overrides": {
+        "claim_index": 0,
+        "displayed_loss_date": "2027-11-22"
+      }
+    }
+  ]
+}

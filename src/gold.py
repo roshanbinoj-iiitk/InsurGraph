@@ -228,6 +228,8 @@ def load_gold(source: str = "real") -> dict[str, DocumentExtraction]:
         files.append(SYNTH_DIR / "gold.jsonl")
     out = {}
     for f in files:
+        if not f.exists():
+            continue
         for line in open(f):
             d = json.loads(line)
             out[d["doc_id"]] = DocumentExtraction.model_validate(d).stamp_source(d["doc_id"])

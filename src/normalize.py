@@ -7,6 +7,7 @@ and company suffixes, coverage names mapped to a small canonical list.
 from __future__ import annotations
 
 import re
+import unicodedata
 from datetime import date, datetime
 
 _MONTHS = {
@@ -200,7 +201,7 @@ def norm_id(value: str | None) -> str | None:
 def norm_text(value: str | None) -> str | None:
     if not value:
         return None
-    s = re.sub(r"[^\w\s]", " ", str(value).lower())
+    s = re.sub(r"[^\w\s]", " ", unicodedata.normalize("NFKC", str(value)).lower())
     return _clean_ws(s) or None
 
 

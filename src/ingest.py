@@ -8,6 +8,7 @@ and money values across columns on the SOV grid, so plain PyMuPDF text is the de
 from __future__ import annotations
 
 import re
+import unicodedata
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -58,7 +59,7 @@ def load_pdf(path: str | Path, method: str = "pymupdf") -> Document:
     doc_id = path.stem
     if method == "pymupdf":
         with pymupdf.open(path) as pdf:
-            pages = [Page(i + 1, pg.get_text()) for i, pg in enumerate(pdf)]
+            pages = [Page(i + 1, _clean(pg.get_text())) for i, pg in enumerate(pdf)]
     elif method == "pymupdf4llm":
         import pymupdf4llm
 
@@ -67,6 +68,11 @@ def load_pdf(path: str | Path, method: str = "pymupdf") -> Document:
     else:
         raise ValueError(method)
     return Document(doc_id=doc_id, path=path, pages=pages)
+
+
+def _clean(text: str) -> str:
+    """NFKC folds typographic ligatures (U+FB01 'fi') that PyMuPDF emits for some fonts."""
+    return unicodedata.normalize("NFKC", text)
 
 
 def has_text_layer(path: str | Path, min_chars: int = 50) -> bool:

@@ -1,0 +1,147 @@
+{
+ "doc_id": "SYNDEV002_04_certificate_of_currency",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_04_certificate_of_currency",
+   "role": "insured",
+   "name": "Copperleaf Engineering Pty Ltd",
+   "abn": "92 762 501 283"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_04_certificate_of_currency",
+   "role": "insurer",
+   "name": "Meridian Specialty",
+   "abn": null
+  }
+ ],
+ "policies": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_04_certificate_of_currency",
+   "policy_number": "MS-2026-200818",
+   "premium": null
+  }
+ ],
+ "coverages": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_04_certificate_of_currency",
+   "coverage_type": "public_liability",
+   "limit": 10000000.0,
+   "deductible": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_04_certificate_of_currency",
+   "coverage_type": "cyber",
+   "limit": 500000.0,
+   "deductible": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_04_certificate_of_currency",
+   "coverage_type": "management_liability",
+   "limit": 5000000.0,
+   "deductible": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_04_certificate_of_currency",
+   "coverage_type": "property",
+   "limit": 2000000.0,
+   "deductible": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_04_certificate_of_currency",
+   "coverage_type": "business_interruption",
+   "limit": 250000.0,
+   "deductible": null
+  }
+ ],
+ "locations": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_04_certificate_of_currency",
+   "location_no": null,
+   "address": "243 Foundry Dr, Geelong VIC 3220",
+   "total_declared_value": null,
+   "currency": null
+  }
+ ],
+ "claims": [],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_04_certificate_of_currency",
+   "kind": "certificate_date",
+   "date": "2026-01-18"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_04_certificate_of_currency",
+   "kind": "policy_start",
+   "date": "2026-01-22"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_04_certificate_of_currency",
+   "kind": "policy_end",
+   "date": "2027-01-21"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_04_certificate_of_currency",
+   "subject": "MS-2026-200818",
+   "predicate": "HAS_INSURED",
+   "object": "Copperleaf Engineering Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_04_certificate_of_currency",
+   "subject": "MS-2026-200818",
+   "predicate": "ISSUED_BY",
+   "object": "Meridian Specialty"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_04_certificate_of_currency",
+   "subject": "MS-2026-200818",
+   "predicate": "HAS_COVERAGE",
+   "object": "public_liability"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_04_certificate_of_currency",
+   "subject": "MS-2026-200818",
+   "predicate": "HAS_COVERAGE",
+   "object": "cyber"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_04_certificate_of_currency",
+   "subject": "MS-2026-200818",
+   "predicate": "HAS_COVERAGE",
+   "object": "management_liability"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_04_certificate_of_currency",
+   "subject": "MS-2026-200818",
+   "predicate": "HAS_COVERAGE",
+   "object": "property"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_04_certificate_of_currency",
+   "subject": "MS-2026-200818",
+   "predicate": "HAS_COVERAGE",
+   "object": "business_interruption"
+  }
+ ],
+ "declared_total": null
+}

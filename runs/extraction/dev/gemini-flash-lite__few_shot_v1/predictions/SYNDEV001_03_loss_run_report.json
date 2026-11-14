@@ -1,0 +1,107 @@
+{
+ "doc_id": "SYNDEV001_03_loss_run_report",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_03_loss_run_report",
+   "role": "insurer",
+   "name": "Kookaburra Commercial",
+   "abn": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_03_loss_run_report",
+   "role": "insured",
+   "name": "Tallowwood Engineering Pty Ltd",
+   "abn": "77 220 074 584"
+  }
+ ],
+ "policies": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_03_loss_run_report",
+   "policy_number": "KC-2026-385098",
+   "premium": null
+  }
+ ],
+ "coverages": [],
+ "locations": [],
+ "claims": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_03_loss_run_report",
+   "claim_no": "CL-2021-36640",
+   "loss_date": "2021-10-01",
+   "reported_date": "2021-10-26",
+   "category": "Motor Collision",
+   "status": "Closed",
+   "incurred": 56823.0
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_03_loss_run_report",
+   "claim_no": "CL-2022-47171",
+   "loss_date": "2022-02-01",
+   "reported_date": "2022-02-16",
+   "category": "Water Damage",
+   "status": "Closed",
+   "incurred": 87686.0
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_03_loss_run_report",
+   "claim_no": "CL-2023-84167",
+   "loss_date": "2023-02-18",
+   "reported_date": "2023-03-14",
+   "category": "Storm Damage",
+   "status": "Closed",
+   "incurred": 59242.0
+  }
+ ],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_03_loss_run_report",
+   "kind": "valuation_date",
+   "date": "2025-12-15"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_03_loss_run_report",
+   "subject": "KC-2026-385098",
+   "predicate": "HAS_INSURED",
+   "object": "Tallowwood Engineering Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_03_loss_run_report",
+   "subject": "KC-2026-385098",
+   "predicate": "ISSUED_BY",
+   "object": "Kookaburra Commercial"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_03_loss_run_report",
+   "subject": "KC-2026-385098",
+   "predicate": "HAS_CLAIM",
+   "object": "CL-2021-36640"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_03_loss_run_report",
+   "subject": "KC-2026-385098",
+   "predicate": "HAS_CLAIM",
+   "object": "CL-2022-47171"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_03_loss_run_report",
+   "subject": "KC-2026-385098",
+   "predicate": "HAS_CLAIM",
+   "object": "CL-2023-84167"
+  }
+ ],
+ "declared_total": null
+}

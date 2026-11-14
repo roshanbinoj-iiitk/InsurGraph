@@ -1,0 +1,119 @@
+{
+ "doc_id": "SYNDEV001_04_certificate_of_currency",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_04_certificate_of_currency",
+   "role": "insurer",
+   "name": "Kookaburra Commercial",
+   "abn": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_04_certificate_of_currency",
+   "role": "insured",
+   "name": "Tallowwood Engineering Pty Ltd",
+   "abn": "77 220 074 584"
+  }
+ ],
+ "policies": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_04_certificate_of_currency",
+   "policy_number": "KC-2026-385098",
+   "premium": null
+  }
+ ],
+ "coverages": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_04_certificate_of_currency",
+   "coverage_type": "public_liability",
+   "limit": 20000000.0,
+   "deductible": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_04_certificate_of_currency",
+   "coverage_type": "motor",
+   "limit": 1000000.0,
+   "deductible": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_04_certificate_of_currency",
+   "coverage_type": "management_liability",
+   "limit": 1000000.0,
+   "deductible": null
+  }
+ ],
+ "locations": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_04_certificate_of_currency",
+   "location_no": null,
+   "address": "138 Railway Dr, Bunbury WA 6230",
+   "total_declared_value": null,
+   "currency": null
+  }
+ ],
+ "claims": [],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_04_certificate_of_currency",
+   "kind": "certificate_date",
+   "date": "2026-01-03"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_04_certificate_of_currency",
+   "kind": "policy_start",
+   "date": "2026-01-07"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_04_certificate_of_currency",
+   "kind": "policy_end",
+   "date": "2027-01-06"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_04_certificate_of_currency",
+   "subject": "KC-2026-385098",
+   "predicate": "ISSUED_BY",
+   "object": "Kookaburra Commercial"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_04_certificate_of_currency",
+   "subject": "KC-2026-385098",
+   "predicate": "HAS_INSURED",
+   "object": "Tallowwood Engineering Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_04_certificate_of_currency",
+   "subject": "KC-2026-385098",
+   "predicate": "HAS_COVERAGE",
+   "object": "public_liability"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_04_certificate_of_currency",
+   "subject": "KC-2026-385098",
+   "predicate": "HAS_COVERAGE",
+   "object": "motor"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_04_certificate_of_currency",
+   "subject": "KC-2026-385098",
+   "predicate": "HAS_COVERAGE",
+   "object": "management_liability"
+  }
+ ],
+ "declared_total": null
+}

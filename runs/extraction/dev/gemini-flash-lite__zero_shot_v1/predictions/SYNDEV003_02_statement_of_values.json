@@ -1,0 +1,83 @@
+{
+ "doc_id": "SYNDEV003_02_statement_of_values",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_02_statement_of_values",
+   "role": "broker",
+   "name": "Highline Brokers Pty Ltd",
+   "abn": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_02_statement_of_values",
+   "role": "insured",
+   "name": "Granite Peak Veterinary Pty Ltd",
+   "abn": "17 105 393 141"
+  }
+ ],
+ "policies": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_02_statement_of_values",
+   "policy_number": "HM-2026-579731",
+   "premium": null
+  }
+ ],
+ "coverages": [],
+ "locations": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_02_statement_of_values",
+   "location_no": 1,
+   "address": "225 Ocean Rd, Devonport TAS 7310",
+   "total_declared_value": 4757000.0,
+   "currency": "AUD"
+  }
+ ],
+ "claims": [],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_02_statement_of_values",
+   "kind": "policy_start",
+   "date": "2026-03-12"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_02_statement_of_values",
+   "kind": "policy_end",
+   "date": "2027-03-11"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_02_statement_of_values",
+   "kind": "valuation_date",
+   "date": "2026-02-20"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_02_statement_of_values",
+   "subject": "HM-2026-579731",
+   "predicate": "HAS_INSURED",
+   "object": "Granite Peak Veterinary Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_02_statement_of_values",
+   "subject": "HM-2026-579731",
+   "predicate": "PLACED_BY",
+   "object": "Highline Brokers Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_02_statement_of_values",
+   "subject": "HM-2026-579731",
+   "predicate": "COVERS_LOCATION",
+   "object": "1"
+  }
+ ],
+ "declared_total": 5591000.0
+}

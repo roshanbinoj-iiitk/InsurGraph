@@ -97,7 +97,10 @@ def _is_retryable(exc: BaseException) -> bool:
             time.sleep(min(exc.retry_after, 120))
         return True
     name = type(exc).__name__.lower()
-    return any(k in name for k in ("ratelimit", "timeout", "connection", "unavailable", "internalserver"))
+    if any(k in name for k in ("ratelimit", "timeout", "connection", "unavailable", "internalserver", "servererror")):
+        return True
+    return getattr(exc, "code", None) in (429, 500, 502, 503, 504) or getattr(exc, "status_code", None) in (
+        429, 500, 502, 503, 504)
 
 
 def _retry_after(exc: Exception) -> float | None:
@@ -158,7 +161,7 @@ def complete(
 @retry(
     retry=retry_if_exception(_is_retryable),
     wait=wait_exponential(multiplier=2, min=2, max=60),
-    stop=stop_after_attempt(6),
+    stop=stop_after_attempt(8),
     reraise=True,
 )
 def _call(spec: ModelSpec, system: str, user: str, temperature: float, json_mode: bool, max_tokens: int) -> LLMResult:

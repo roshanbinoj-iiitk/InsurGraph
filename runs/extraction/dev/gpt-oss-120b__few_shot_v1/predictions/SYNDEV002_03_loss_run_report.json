@@ -1,0 +1,110 @@
+{
+ "doc_id": "SYNDEV002_03_loss_run_report",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_03_loss_run_report",
+   "role": "insured",
+   "name": "Copperleaf Engineering Pty Ltd",
+   "abn": "92 762 501 283"
+  }
+ ],
+ "policies": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_03_loss_run_report",
+   "policy_number": "MS-2026-200818",
+   "premium": null
+  }
+ ],
+ "coverages": [],
+ "locations": [],
+ "claims": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_03_loss_run_report",
+   "claim_no": "CL-2021-23323",
+   "loss_date": "2021-04-18",
+   "reported_date": "2021-05-09",
+   "category": "Liability Notification",
+   "status": "Closed",
+   "incurred": 6992.0
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_03_loss_run_report",
+   "claim_no": "CL-2022-67031",
+   "loss_date": "2027-07-12",
+   "reported_date": "2022-12-12",
+   "category": "Motor Collision",
+   "status": "Open",
+   "incurred": 55959.0
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_03_loss_run_report",
+   "claim_no": "CL-2023-99953",
+   "loss_date": "2023-01-08",
+   "reported_date": "2023-01-16",
+   "category": "Motor Collision",
+   "status": "Closed",
+   "incurred": 40247.0
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_03_loss_run_report",
+   "claim_no": "CL-2024-15439",
+   "loss_date": "2024-07-27",
+   "reported_date": "2024-08-12",
+   "category": "Property Damage",
+   "status": "Open",
+   "incurred": 48242.0
+  }
+ ],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_03_loss_run_report",
+   "kind": "valuation_date",
+   "date": "2025-11-23"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_03_loss_run_report",
+   "subject": "MS-2026-200818",
+   "predicate": "HAS_INSURED",
+   "object": "Copperleaf Engineering Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_03_loss_run_report",
+   "subject": "MS-2026-200818",
+   "predicate": "HAS_CLAIM",
+   "object": "CL-2021-23323"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_03_loss_run_report",
+   "subject": "MS-2026-200818",
+   "predicate": "HAS_CLAIM",
+   "object": "CL-2022-67031"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_03_loss_run_report",
+   "subject": "MS-2026-200818",
+   "predicate": "HAS_CLAIM",
+   "object": "CL-2023-99953"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_03_loss_run_report",
+   "subject": "MS-2026-200818",
+   "predicate": "HAS_CLAIM",
+   "object": "CL-2024-15439"
+  }
+ ],
+ "declared_total": null
+}

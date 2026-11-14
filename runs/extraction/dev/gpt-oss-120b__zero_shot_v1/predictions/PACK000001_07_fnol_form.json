@@ -1,0 +1,88 @@
+{
+ "doc_id": "PACK000001_07_fnol_form",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "PACK000001_07_fnol_form",
+   "role": "insured",
+   "name": "Greenleaf Property Services Pty Ltd",
+   "abn": "85 631 874 379"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_07_fnol_form",
+   "role": "insurer",
+   "name": "Pinewood Insurance Underwriting Agency",
+   "abn": null
+  }
+ ],
+ "policies": [
+  {
+   "page": 1,
+   "source_doc": "PACK000001_07_fnol_form",
+   "policy_number": "PI-2025-981268",
+   "premium": null
+  }
+ ],
+ "coverages": [],
+ "locations": [
+  {
+   "page": 1,
+   "source_doc": "PACK000001_07_fnol_form",
+   "location_no": null,
+   "address": "Unit 15, 433 Pioneer Bvd, Townsville QLD 4810",
+   "total_declared_value": null,
+   "currency": null
+  }
+ ],
+ "claims": [
+  {
+   "page": 1,
+   "source_doc": "PACK000001_07_fnol_form",
+   "claim_no": "CLM-2023-10762",
+   "loss_date": "2023-08-08",
+   "reported_date": "2023-08-27",
+   "category": "Theft",
+   "status": "First Notification",
+   "incurred": 43520.0
+  }
+ ],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "PACK000001_07_fnol_form",
+   "kind": "policy_start",
+   "date": "2025-06-09"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_07_fnol_form",
+   "kind": "policy_end",
+   "date": "2026-06-08"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "PACK000001_07_fnol_form",
+   "subject": "PI-2025-981268",
+   "predicate": "HAS_INSURED",
+   "object": "Greenleaf Property Services Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_07_fnol_form",
+   "subject": "PI-2025-981268",
+   "predicate": "ISSUED_BY",
+   "object": "Pinewood Insurance Underwriting Agency"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_07_fnol_form",
+   "subject": "PI-2025-981268",
+   "predicate": "HAS_CLAIM",
+   "object": "CLM-2023-10762"
+  }
+ ],
+ "declared_total": null
+}

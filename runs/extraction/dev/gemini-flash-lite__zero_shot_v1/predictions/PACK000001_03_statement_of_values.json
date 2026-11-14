@@ -1,0 +1,98 @@
+{
+ "doc_id": "PACK000001_03_statement_of_values",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "PACK000001_03_statement_of_values",
+   "role": "broker",
+   "name": "Ridgeline Insurance Brokers Pty Ltd",
+   "abn": null
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_03_statement_of_values",
+   "role": "insured",
+   "name": "Greenleaf Property Services Pty Ltd",
+   "abn": "85 631 874 379"
+  }
+ ],
+ "policies": [
+  {
+   "page": 1,
+   "source_doc": "PACK000001_03_statement_of_values",
+   "policy_number": "PI-2025-981268",
+   "premium": null
+  }
+ ],
+ "coverages": [],
+ "locations": [
+  {
+   "page": 1,
+   "source_doc": "PACK000001_03_statement_of_values",
+   "location_no": 1,
+   "address": "Unit 15, 433 Pioneer Bvd, Townsville QLD 4810",
+   "total_declared_value": 3413719.0,
+   "currency": "USD"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_03_statement_of_values",
+   "location_no": 2,
+   "address": "83 Crossing Way, Canberra ACT 2600",
+   "total_declared_value": 4962642.0,
+   "currency": "AUD"
+  }
+ ],
+ "claims": [],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "PACK000001_03_statement_of_values",
+   "kind": "policy_start",
+   "date": "2025-06-09"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_03_statement_of_values",
+   "kind": "policy_end",
+   "date": "2026-06-08"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_03_statement_of_values",
+   "kind": "valuation_date",
+   "date": "2025-05-13"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "PACK000001_03_statement_of_values",
+   "subject": "PI-2025-981268",
+   "predicate": "HAS_INSURED",
+   "object": "Greenleaf Property Services Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_03_statement_of_values",
+   "subject": "PI-2025-981268",
+   "predicate": "PLACED_BY",
+   "object": "Ridgeline Insurance Brokers Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_03_statement_of_values",
+   "subject": "PI-2025-981268",
+   "predicate": "COVERS_LOCATION",
+   "object": "1"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_03_statement_of_values",
+   "subject": "PI-2025-981268",
+   "predicate": "COVERS_LOCATION",
+   "object": "2"
+  }
+ ],
+ "declared_total": 8376361.0
+}

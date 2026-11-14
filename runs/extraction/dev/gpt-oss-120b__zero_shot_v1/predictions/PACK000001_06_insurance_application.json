@@ -1,0 +1,112 @@
+{
+ "doc_id": "PACK000001_06_insurance_application",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "PACK000001_06_insurance_application",
+   "role": "insured",
+   "name": "Greenleaf Property Services Pty Ltd",
+   "abn": "85 631 874 379"
+  }
+ ],
+ "policies": [],
+ "coverages": [
+  {
+   "page": 1,
+   "source_doc": "PACK000001_06_insurance_application",
+   "coverage_type": "public_liability",
+   "limit": null,
+   "deductible": null
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_06_insurance_application",
+   "coverage_type": "property",
+   "limit": null,
+   "deductible": null
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_06_insurance_application",
+   "coverage_type": "professional_indemnity",
+   "limit": null,
+   "deductible": null
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_06_insurance_application",
+   "coverage_type": "business_interruption",
+   "limit": null,
+   "deductible": null
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_06_insurance_application",
+   "coverage_type": "cyber",
+   "limit": null,
+   "deductible": null
+  }
+ ],
+ "locations": [
+  {
+   "page": 1,
+   "source_doc": "PACK000001_06_insurance_application",
+   "location_no": null,
+   "address": "Unit 15, 433 Pioneer Bvd, Townsville QLD 4810",
+   "total_declared_value": null,
+   "currency": null
+  }
+ ],
+ "claims": [
+  {
+   "page": 1,
+   "source_doc": "PACK000001_06_insurance_application",
+   "claim_no": "CLM-2020-27293",
+   "loss_date": "2020-09-24",
+   "reported_date": null,
+   "category": "Liability Notification",
+   "status": "Closed",
+   "incurred": 21187.0
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_06_insurance_application",
+   "claim_no": "CLM-2021-94769",
+   "loss_date": "2021-12-02",
+   "reported_date": null,
+   "category": "Property Damage",
+   "status": "Closed",
+   "incurred": 28494.0
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_06_insurance_application",
+   "claim_no": "CLM-2022-56562",
+   "loss_date": "2022-03-05",
+   "reported_date": null,
+   "category": "Liability Notification",
+   "status": "Closed",
+   "incurred": 72781.0
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_06_insurance_application",
+   "claim_no": "CLM-2023-10762",
+   "loss_date": "2023-08-08",
+   "reported_date": null,
+   "category": "Theft",
+   "status": "Open",
+   "incurred": 43520.0
+  }
+ ],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "PACK000001_06_insurance_application",
+   "kind": "policy_start",
+   "date": "2025-06-09"
+  }
+ ],
+ "relationships": [],
+ "declared_total": null
+}

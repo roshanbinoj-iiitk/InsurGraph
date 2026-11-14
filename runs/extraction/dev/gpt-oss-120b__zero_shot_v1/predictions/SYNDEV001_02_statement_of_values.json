@@ -1,0 +1,83 @@
+{
+ "doc_id": "SYNDEV001_02_statement_of_values",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_02_statement_of_values",
+   "role": "insured",
+   "name": "Tallowwood Engineering Pty Ltd",
+   "abn": "77220074584"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_02_statement_of_values",
+   "role": "broker",
+   "name": "Highline Brokers Pty Ltd",
+   "abn": null
+  }
+ ],
+ "policies": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_02_statement_of_values",
+   "policy_number": "KC-2026-385098",
+   "premium": null
+  }
+ ],
+ "coverages": [],
+ "locations": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_02_statement_of_values",
+   "location_no": 1,
+   "address": "138 Railway Dr, Bunbury WA 6230",
+   "total_declared_value": 3055000.0,
+   "currency": "AUD"
+  }
+ ],
+ "claims": [],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_02_statement_of_values",
+   "kind": "policy_start",
+   "date": "2026-01-07"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_02_statement_of_values",
+   "kind": "policy_end",
+   "date": "2027-01-06"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_02_statement_of_values",
+   "kind": "valuation_date",
+   "date": "2025-12-15"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_02_statement_of_values",
+   "subject": "KC-2026-385098",
+   "predicate": "HAS_INSURED",
+   "object": "Tallowwood Engineering Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_02_statement_of_values",
+   "subject": "KC-2026-385098",
+   "predicate": "PLACED_BY",
+   "object": "Highline Brokers Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV001_02_statement_of_values",
+   "subject": "KC-2026-385098",
+   "predicate": "COVERS_LOCATION",
+   "object": "1"
+  }
+ ],
+ "declared_total": 3055000.0
+}

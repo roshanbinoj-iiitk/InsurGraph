@@ -1,0 +1,85 @@
+{
+ "doc_id": "PACK000001_01_broker_submission_email",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "PACK000001_01_broker_submission_email",
+   "role": "broker",
+   "name": "Ridgeline Insurance Brokers Pty Ltd",
+   "abn": null
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_01_broker_submission_email",
+   "role": "insured",
+   "name": "Greenleaf Property Services Pty Ltd",
+   "abn": null
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_01_broker_submission_email",
+   "role": "insurer",
+   "name": "Pinewood Insurance Underwriting Agency",
+   "abn": null
+  }
+ ],
+ "policies": [],
+ "coverages": [
+  {
+   "page": 1,
+   "source_doc": "PACK000001_01_broker_submission_email",
+   "coverage_type": "public_liability",
+   "limit": null,
+   "deductible": null
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_01_broker_submission_email",
+   "coverage_type": "property",
+   "limit": null,
+   "deductible": null
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_01_broker_submission_email",
+   "coverage_type": "professional_indemnity",
+   "limit": null,
+   "deductible": null
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_01_broker_submission_email",
+   "coverage_type": "business_interruption",
+   "limit": null,
+   "deductible": null
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_01_broker_submission_email",
+   "coverage_type": "cyber",
+   "limit": null,
+   "deductible": null
+  }
+ ],
+ "locations": [
+  {
+   "page": 1,
+   "source_doc": "PACK000001_01_broker_submission_email",
+   "location_no": null,
+   "address": "Townsville QLD",
+   "total_declared_value": null,
+   "currency": null
+  }
+ ],
+ "claims": [],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "PACK000001_01_broker_submission_email",
+   "kind": "policy_start",
+   "date": "2025-06-09"
+  }
+ ],
+ "relationships": [],
+ "declared_total": null
+}

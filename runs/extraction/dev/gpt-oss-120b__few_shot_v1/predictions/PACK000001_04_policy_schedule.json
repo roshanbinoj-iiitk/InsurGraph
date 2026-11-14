@@ -1,0 +1,177 @@
+{
+ "doc_id": "PACK000001_04_policy_schedule",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "PACK000001_04_policy_schedule",
+   "role": "insurer",
+   "name": "Pinewood Insurance",
+   "abn": null
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_04_policy_schedule",
+   "role": "insured",
+   "name": "Greenleaf Property Services Pty Ltd",
+   "abn": "85 631 874 379"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_04_policy_schedule",
+   "role": "broker",
+   "name": "Ridgeline Insurance Brokers Pty Ltd",
+   "abn": null
+  }
+ ],
+ "policies": [
+  {
+   "page": 1,
+   "source_doc": "PACK000001_04_policy_schedule",
+   "policy_number": "PI-2025-981268",
+   "premium": 24136.0
+  }
+ ],
+ "coverages": [
+  {
+   "page": 1,
+   "source_doc": "PACK000001_04_policy_schedule",
+   "coverage_type": "public_liability",
+   "limit": 20000000.0,
+   "deductible": 10000.0
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_04_policy_schedule",
+   "coverage_type": "property",
+   "limit": 5000000.0,
+   "deductible": 2500.0
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_04_policy_schedule",
+   "coverage_type": "professional_indemnity",
+   "limit": 5000000.0,
+   "deductible": 25000.0
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_04_policy_schedule",
+   "coverage_type": "business_interruption",
+   "limit": 1000000.0,
+   "deductible": 10000.0
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_04_policy_schedule",
+   "coverage_type": "cyber",
+   "limit": 2000000.0,
+   "deductible": 25000.0
+  }
+ ],
+ "locations": [
+  {
+   "page": 1,
+   "source_doc": "PACK000001_04_policy_schedule",
+   "location_no": 1,
+   "address": "Unit 15, 433 Pioneer Bvd, Townsville QLD 4810",
+   "total_declared_value": null,
+   "currency": null
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_04_policy_schedule",
+   "location_no": 2,
+   "address": "83 Crossing Way, Canberra ACT 2600",
+   "total_declared_value": null,
+   "currency": null
+  }
+ ],
+ "claims": [],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "PACK000001_04_policy_schedule",
+   "kind": "policy_start",
+   "date": "2025-06-09"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_04_policy_schedule",
+   "kind": "policy_end",
+   "date": "2026-06-08"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "PACK000001_04_policy_schedule",
+   "subject": "PI-2025-981268",
+   "predicate": "HAS_INSURED",
+   "object": "Greenleaf Property Services Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_04_policy_schedule",
+   "subject": "PI-2025-981268",
+   "predicate": "ISSUED_BY",
+   "object": "Pinewood Insurance"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_04_policy_schedule",
+   "subject": "PI-2025-981268",
+   "predicate": "PLACED_BY",
+   "object": "Ridgeline Insurance Brokers Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_04_policy_schedule",
+   "subject": "PI-2025-981268",
+   "predicate": "HAS_COVERAGE",
+   "object": "public_liability"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_04_policy_schedule",
+   "subject": "PI-2025-981268",
+   "predicate": "HAS_COVERAGE",
+   "object": "property"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_04_policy_schedule",
+   "subject": "PI-2025-981268",
+   "predicate": "HAS_COVERAGE",
+   "object": "professional_indemnity"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_04_policy_schedule",
+   "subject": "PI-2025-981268",
+   "predicate": "HAS_COVERAGE",
+   "object": "business_interruption"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_04_policy_schedule",
+   "subject": "PI-2025-981268",
+   "predicate": "HAS_COVERAGE",
+   "object": "cyber"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_04_policy_schedule",
+   "subject": "PI-2025-981268",
+   "predicate": "COVERS_LOCATION",
+   "object": "1"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_04_policy_schedule",
+   "subject": "PI-2025-981268",
+   "predicate": "COVERS_LOCATION",
+   "object": "2"
+  }
+ ],
+ "declared_total": null
+}

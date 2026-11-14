@@ -1,0 +1,128 @@
+{
+ "doc_id": "SYNDEV002_02_statement_of_values",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_02_statement_of_values",
+   "role": "broker",
+   "name": "Pacific Crest Brokers Pty Ltd",
+   "abn": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_02_statement_of_values",
+   "role": "insured",
+   "name": "Copperleaf Engineering Pty Ltd",
+   "abn": "92762501283"
+  }
+ ],
+ "policies": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_02_statement_of_values",
+   "policy_number": "MS-2026-200818",
+   "premium": null
+  }
+ ],
+ "coverages": [],
+ "locations": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_02_statement_of_values",
+   "location_no": 1,
+   "address": "243 Foundry Dr, Geelong VIC 3220",
+   "total_declared_value": 6471000.0,
+   "currency": "AUD"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_02_statement_of_values",
+   "location_no": 2,
+   "address": "Unit 2, 221 Station Ave, Bendigo VIC 3550",
+   "total_declared_value": 2295000.0,
+   "currency": "AUD"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_02_statement_of_values",
+   "location_no": 3,
+   "address": "163 Foundry Ct, Devonport TAS 7310",
+   "total_declared_value": 1960000.0,
+   "currency": "AUD"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_02_statement_of_values",
+   "location_no": 4,
+   "address": "149 Harbour Dr, Bunbury WA 6230",
+   "total_declared_value": 6424000.0,
+   "currency": "AUD"
+  }
+ ],
+ "claims": [],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_02_statement_of_values",
+   "kind": "policy_start",
+   "date": "2026-01-22"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_02_statement_of_values",
+   "kind": "policy_end",
+   "date": "2027-01-21"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_02_statement_of_values",
+   "kind": "valuation_date",
+   "date": "2025-11-23"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_02_statement_of_values",
+   "subject": "MS-2026-200818",
+   "predicate": "HAS_INSURED",
+   "object": "Copperleaf Engineering Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_02_statement_of_values",
+   "subject": "MS-2026-200818",
+   "predicate": "PLACED_BY",
+   "object": "Pacific Crest Brokers Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_02_statement_of_values",
+   "subject": "MS-2026-200818",
+   "predicate": "COVERS_LOCATION",
+   "object": "1"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_02_statement_of_values",
+   "subject": "MS-2026-200818",
+   "predicate": "COVERS_LOCATION",
+   "object": "2"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_02_statement_of_values",
+   "subject": "MS-2026-200818",
+   "predicate": "COVERS_LOCATION",
+   "object": "3"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_02_statement_of_values",
+   "subject": "MS-2026-200818",
+   "predicate": "COVERS_LOCATION",
+   "object": "4"
+  }
+ ],
+ "declared_total": 17150000.0
+}

@@ -1,0 +1,80 @@
+{
+ "doc_id": "PACK000001_08_claim_report",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "PACK000001_08_claim_report",
+   "role": "insured",
+   "name": "Greenleaf Property Services Pty Ltd",
+   "abn": null
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_08_claim_report",
+   "role": "insurer",
+   "name": "Pinewood Insurance Underwriting Agency",
+   "abn": null
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_08_claim_report",
+   "role": "loss_adjuster",
+   "name": "Meridian Claims Services",
+   "abn": null
+  }
+ ],
+ "policies": [
+  {
+   "page": 1,
+   "source_doc": "PACK000001_08_claim_report",
+   "policy_number": "PI-2025-981268",
+   "premium": null
+  }
+ ],
+ "coverages": [],
+ "locations": [],
+ "claims": [
+  {
+   "page": 1,
+   "source_doc": "PACK000001_08_claim_report",
+   "claim_no": "CLM-2022-56562",
+   "loss_date": "2022-03-05",
+   "reported_date": "2022-04-08",
+   "category": "Liability Notification",
+   "status": "Closed",
+   "incurred": 72781.0
+  }
+ ],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "PACK000001_08_claim_report",
+   "kind": "report_date",
+   "date": "2022-04-08"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "PACK000001_08_claim_report",
+   "subject": "PI-2025-981268",
+   "predicate": "HAS_INSURED",
+   "object": "Greenleaf Property Services Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_08_claim_report",
+   "subject": "PI-2025-981268",
+   "predicate": "ISSUED_BY",
+   "object": "Pinewood Insurance Underwriting Agency"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000001_08_claim_report",
+   "subject": "PI-2025-981268",
+   "predicate": "HAS_CLAIM",
+   "object": "CLM-2022-56562"
+  }
+ ],
+ "declared_total": null
+}

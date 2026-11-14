@@ -1,0 +1,119 @@
+{
+ "doc_id": "SYNDEV003_04_certificate_of_currency",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_04_certificate_of_currency",
+   "role": "insurer",
+   "name": "Harbourline Mutual",
+   "abn": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_04_certificate_of_currency",
+   "role": "insured",
+   "name": "Granite Peak Veterinary Pty Ltd",
+   "abn": "17 105 393 141"
+  }
+ ],
+ "policies": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_04_certificate_of_currency",
+   "policy_number": "HM-2026-579713",
+   "premium": null
+  }
+ ],
+ "coverages": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_04_certificate_of_currency",
+   "coverage_type": "public_liability",
+   "limit": 20000000.0,
+   "deductible": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_04_certificate_of_currency",
+   "coverage_type": "business_interruption",
+   "limit": 250000.0,
+   "deductible": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_04_certificate_of_currency",
+   "coverage_type": "professional_indemnity",
+   "limit": 1000000.0,
+   "deductible": null
+  }
+ ],
+ "locations": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_04_certificate_of_currency",
+   "location_no": null,
+   "address": "225 Ocean Rd, Devonport TAS 7310",
+   "total_declared_value": null,
+   "currency": null
+  }
+ ],
+ "claims": [],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_04_certificate_of_currency",
+   "kind": "certificate_date",
+   "date": "2026-03-08"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_04_certificate_of_currency",
+   "kind": "policy_start",
+   "date": "2026-03-12"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_04_certificate_of_currency",
+   "kind": "policy_end",
+   "date": "2027-03-11"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_04_certificate_of_currency",
+   "subject": "HM-2026-579713",
+   "predicate": "ISSUED_BY",
+   "object": "Harbourline Mutual"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_04_certificate_of_currency",
+   "subject": "HM-2026-579713",
+   "predicate": "HAS_INSURED",
+   "object": "Granite Peak Veterinary Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_04_certificate_of_currency",
+   "subject": "HM-2026-579713",
+   "predicate": "HAS_COVERAGE",
+   "object": "public_liability"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_04_certificate_of_currency",
+   "subject": "HM-2026-579713",
+   "predicate": "HAS_COVERAGE",
+   "object": "business_interruption"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_04_certificate_of_currency",
+   "subject": "HM-2026-579713",
+   "predicate": "HAS_COVERAGE",
+   "object": "professional_indemnity"
+  }
+ ],
+ "declared_total": null
+}

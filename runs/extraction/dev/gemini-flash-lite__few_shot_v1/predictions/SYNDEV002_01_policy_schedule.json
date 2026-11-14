@@ -1,0 +1,207 @@
+{
+ "doc_id": "SYNDEV002_01_policy_schedule",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_01_policy_schedule",
+   "role": "insured",
+   "name": "Copperleaf Engineering Pty Ltd",
+   "abn": "92 762 501 283"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_01_policy_schedule",
+   "role": "broker",
+   "name": "Pacific Crest Brokers Pty Ltd",
+   "abn": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_01_policy_schedule",
+   "role": "insurer",
+   "name": "Meridian Specialty Underwriters Pty Ltd",
+   "abn": null
+  }
+ ],
+ "policies": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_01_policy_schedule",
+   "policy_number": "MS-2026-200818",
+   "premium": 38687.0
+  }
+ ],
+ "coverages": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_01_policy_schedule",
+   "coverage_type": "public_liability",
+   "limit": 10000000.0,
+   "deductible": 5000.0
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_01_policy_schedule",
+   "coverage_type": "cyber",
+   "limit": 500000.0,
+   "deductible": 25000.0
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_01_policy_schedule",
+   "coverage_type": "management_liability",
+   "limit": 5000000.0,
+   "deductible": 10000.0
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_01_policy_schedule",
+   "coverage_type": "property",
+   "limit": 2000000.0,
+   "deductible": 1000.0
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_01_policy_schedule",
+   "coverage_type": "business_interruption",
+   "limit": 250000.0,
+   "deductible": 10000.0
+  }
+ ],
+ "locations": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_01_policy_schedule",
+   "location_no": 1,
+   "address": "243 Foundry Dr, Geelong VIC 3220",
+   "total_declared_value": null,
+   "currency": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_01_policy_schedule",
+   "location_no": 2,
+   "address": "Unit 2, 221 Station Ave, Bendigo VIC 3550",
+   "total_declared_value": null,
+   "currency": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_01_policy_schedule",
+   "location_no": 3,
+   "address": "163 Foundry Ct, Devonport TAS 7310",
+   "total_declared_value": null,
+   "currency": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_01_policy_schedule",
+   "location_no": 4,
+   "address": "149 Harbour Dr, Bunbury WA 6230",
+   "total_declared_value": null,
+   "currency": null
+  }
+ ],
+ "claims": [],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_01_policy_schedule",
+   "kind": "policy_start",
+   "date": "2026-01-22"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_01_policy_schedule",
+   "kind": "policy_end",
+   "date": "2027-01-21"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_01_policy_schedule",
+   "subject": "MS-2026-200818",
+   "predicate": "HAS_INSURED",
+   "object": "Copperleaf Engineering Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_01_policy_schedule",
+   "subject": "MS-2026-200818",
+   "predicate": "ISSUED_BY",
+   "object": "Meridian Specialty Underwriters Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_01_policy_schedule",
+   "subject": "MS-2026-200818",
+   "predicate": "PLACED_BY",
+   "object": "Pacific Crest Brokers Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_01_policy_schedule",
+   "subject": "MS-2026-200818",
+   "predicate": "HAS_COVERAGE",
+   "object": "public_liability"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_01_policy_schedule",
+   "subject": "MS-2026-200818",
+   "predicate": "HAS_COVERAGE",
+   "object": "cyber"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_01_policy_schedule",
+   "subject": "MS-2026-200818",
+   "predicate": "HAS_COVERAGE",
+   "object": "management_liability"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_01_policy_schedule",
+   "subject": "MS-2026-200818",
+   "predicate": "HAS_COVERAGE",
+   "object": "property"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_01_policy_schedule",
+   "subject": "MS-2026-200818",
+   "predicate": "HAS_COVERAGE",
+   "object": "business_interruption"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_01_policy_schedule",
+   "subject": "MS-2026-200818",
+   "predicate": "COVERS_LOCATION",
+   "object": "1"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_01_policy_schedule",
+   "subject": "MS-2026-200818",
+   "predicate": "COVERS_LOCATION",
+   "object": "2"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_01_policy_schedule",
+   "subject": "MS-2026-200818",
+   "predicate": "COVERS_LOCATION",
+   "object": "3"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV002_01_policy_schedule",
+   "subject": "MS-2026-200818",
+   "predicate": "COVERS_LOCATION",
+   "object": "4"
+  }
+ ],
+ "declared_total": null
+}

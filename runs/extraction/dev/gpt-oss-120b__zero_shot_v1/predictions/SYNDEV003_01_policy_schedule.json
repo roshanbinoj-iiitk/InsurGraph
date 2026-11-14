@@ -1,0 +1,134 @@
+{
+ "doc_id": "SYNDEV003_01_policy_schedule",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_01_policy_schedule",
+   "role": "insured",
+   "name": "Granite Peak Veterinary Pty Ltd",
+   "abn": "17 105 393 141"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_01_policy_schedule",
+   "role": "insurer",
+   "name": "Harbourline Mutual Insurance Ltd",
+   "abn": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_01_policy_schedule",
+   "role": "broker",
+   "name": "Highline Brokers Pty Ltd",
+   "abn": null
+  }
+ ],
+ "policies": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_01_policy_schedule",
+   "policy_number": "HM-2026-579731",
+   "premium": 29125.0
+  }
+ ],
+ "coverages": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_01_policy_schedule",
+   "coverage_type": "public_liability",
+   "limit": 20000000.0,
+   "deductible": 10000.0
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_01_policy_schedule",
+   "coverage_type": "business_interruption",
+   "limit": 250000.0,
+   "deductible": 10000.0
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_01_policy_schedule",
+   "coverage_type": "professional_indemnity",
+   "limit": 1000000.0,
+   "deductible": 10000.0
+  }
+ ],
+ "locations": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_01_policy_schedule",
+   "location_no": 1,
+   "address": "225 Ocean Rd, Devonport TAS 7310",
+   "total_declared_value": null,
+   "currency": null
+  }
+ ],
+ "claims": [],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_01_policy_schedule",
+   "kind": "policy_start",
+   "date": "2026-03-12"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_01_policy_schedule",
+   "kind": "policy_end",
+   "date": "2027-03-11"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_01_policy_schedule",
+   "subject": "HM-2026-579731",
+   "predicate": "HAS_INSURED",
+   "object": "Granite Peak Veterinary Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_01_policy_schedule",
+   "subject": "HM-2026-579731",
+   "predicate": "ISSUED_BY",
+   "object": "Harbourline Mutual Insurance Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_01_policy_schedule",
+   "subject": "HM-2026-579731",
+   "predicate": "PLACED_BY",
+   "object": "Highline Brokers Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_01_policy_schedule",
+   "subject": "HM-2026-579731",
+   "predicate": "HAS_COVERAGE",
+   "object": "public_liability"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_01_policy_schedule",
+   "subject": "HM-2026-579731",
+   "predicate": "HAS_COVERAGE",
+   "object": "business_interruption"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_01_policy_schedule",
+   "subject": "HM-2026-579731",
+   "predicate": "HAS_COVERAGE",
+   "object": "professional_indemnity"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNDEV003_01_policy_schedule",
+   "subject": "HM-2026-579731",
+   "predicate": "COVERS_LOCATION",
+   "object": "1"
+  }
+ ],
+ "declared_total": null
+}

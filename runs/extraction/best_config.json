@@ -1,0 +1,10 @@
+{
+  "best": "gemini-flash-lite__few_shot_v1",
+  "selected_on": "dev",
+  "ranking": {
+    "gemini-flash-lite__few_shot_v1": 0.9621,
+    "gemini-flash-lite__zero_shot_v1": 0.9562,
+    "gpt-oss-120b__zero_shot_v1": 0.95,
+    "gpt-oss-120b__few_shot_v1": 0.9347
+  }
+}

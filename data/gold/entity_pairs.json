@@ -1,0 +1,33 @@
+{
+  "_about": "Hand-labelled name pairs for tuning (dev) and checking (test) entity resolution. Variants include PDF line-wrap artefacts seen in extraction, short forms used on loss runs and certificates, and hard negatives that share most tokens.",
+  "pairs": [
+    {"split": "dev", "a": "Greenleaf Property Services Pty Ltd", "b": "Greenleaf Property Se rvices Pty Ltd", "same": true},
+    {"split": "dev", "a": "Pinewood Insurance Underwriting Agency", "b": "Pinewood Insurance Un derwriting Agency", "same": true},
+    {"split": "dev", "a": "Pinewood Insurance Underwriting Agency", "b": "Pinewood Underwriting", "same": true},
+    {"split": "dev", "a": "Pinewood Insurance Underwriting Agency", "b": "Verity Insurance Underwriting Agency", "same": false},
+    {"split": "dev", "a": "Ridgeline Insurance Brokers Pty Ltd", "b": "Ridgeline Insurance Brokers", "same": true},
+    {"split": "dev", "a": "Ridgeline Insurance Brokers Pty Ltd", "b": "Pinewood Insurance Underwriting Agency", "same": false},
+    {"split": "dev", "a": "Meridian Claims Services", "b": "Meridian Specialty Underwriters Pty Ltd", "same": false},
+    {"split": "dev", "a": "Kookaburra Commercial Insurance Co", "b": "Kookaburra Commercial", "same": true},
+    {"split": "dev", "a": "Harbourline Mutual Insurance Ltd", "b": "Harbourline Mutual", "same": true},
+    {"split": "dev", "a": "Harbourline Mutual Insurance Ltd", "b": "Harbourview Mutual Underwriting", "same": false},
+    {"split": "dev", "a": "Tasman Ridge Underwriting Agency Pty Ltd", "b": "Tasman Ridge Underwriting", "same": true},
+    {"split": "dev", "a": "Northshore Risk Partners Pty Ltd", "b": "Northshore Risk Services Pty Ltd", "same": false},
+    {"split": "dev", "a": "Greenleaf Property Services Pty Ltd", "b": "Greenleaf Property", "same": true},
+    {"split": "dev", "a": "Highline Brokers Pty Ltd", "b": "Clearwater Insurance Brokers Pty Ltd", "same": false},
+    {"split": "test", "a": "Tide Gym Pty Ltd", "b": "Tide Gym", "same": true},
+    {"split": "test", "a": "Southern Cross Commercial Underwriters Pty Ltd", "b": "Southern Cross Commercial Underwriters", "same": true},
+    {"split": "test", "a": "Southern Cross Commercial Underwriters Pty Ltd", "b": "Southern Cross Commercial Underwriting", "same": true},
+    {"split": "test", "a": "Southern Cross Commercial Underwriters Pty Ltd", "b": "Verity Insurance Underwriting Agency", "same": false},
+    {"split": "test", "a": "Summit Risk Brokers Pty Ltd", "b": "Compass Enterprises Pty Ltd", "same": false},
+    {"split": "test", "a": "Blackwood Assurance Limited", "b": "Blackwood Assurance", "same": true},
+    {"split": "test", "a": "Eastgate General Insurance Limited", "b": "Eastgate General", "same": true},
+    {"split": "test", "a": "Eastgate General Insurance Limited", "b": "Westgate General Insurance Limited", "same": false},
+    {"split": "test", "a": "Zurich North America", "b": "Zurich American Insurance Company", "same": true},
+    {"split": "test", "a": "Meridian Specialty Underwriters Pty Ltd", "b": "Meridian Specialty", "same": true},
+    {"split": "test", "a": "Meridian Specialty Underwriters Pty Ltd", "b": "Meridian Claims Services", "same": false},
+    {"split": "test", "a": "Pacific Crest Brokers Pty Ltd", "b": "Pacific Coast Brokers Pty Ltd", "same": false},
+    {"split": "test", "a": "Copperleaf Bakery Pty Ltd", "b": "Copperleaf Bakery", "same": true},
+    {"split": "test", "a": "Summit Risk Brokers Pty Ltd", "b": "Summit Risk Brokers", "same": true}
+  ]
+}

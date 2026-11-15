@@ -135,5 +135,14 @@ def evaluate_pairs(resolver: Resolver, pairs: list[dict]) -> dict:
     acc = (tp + tn) / len(pairs) if pairs else 0.0
     prec = tp / (tp + fp) if tp + fp else 1.0
     rec = tp / (tp + fn) if tp + fn else 1.0
-    return {"n": len(pairs), "tp": tp, "fp": fp, "fn": fn, "tn": tn, "accuracy": acc, "precision": prec,
-            "recall": rec, "rows": rows}
+    return {
+        "n": len(pairs),
+        "tp": tp,
+        "fp": fp,
+        "fn": fn,
+        "tn": tn,
+        "accuracy": acc,
+        "precision": prec,
+        "recall": rec,
+        "rows": rows,
+    }

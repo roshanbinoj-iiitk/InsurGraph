@@ -1,0 +1,56 @@
+{"split": "dev", "resolver": "normalise + fuzzy", "a": "Greenleaf Property Services Pty Ltd", "b": "Greenleaf Property Se rvices Pty Ltd", "same": true, "pred": true, "layer": "normalise", "score": 90.9}
+{"split": "dev", "resolver": "normalise + fuzzy", "a": "Pinewood Insurance Underwriting Agency", "b": "Pinewood Insurance Un derwriting Agency", "same": true, "pred": true, "layer": "normalise", "score": 93.5}
+{"split": "dev", "resolver": "normalise + fuzzy", "a": "Pinewood Insurance Underwriting Agency", "b": "Pinewood Underwriting", "same": true, "pred": true, "layer": "fuzzy", "score": 100.0}
+{"split": "dev", "resolver": "normalise + fuzzy", "a": "Pinewood Insurance Underwriting Agency", "b": "Verity Insurance Underwriting Agency", "same": false, "pred": false, "layer": "fuzzy", "score": 89.2}
+{"split": "dev", "resolver": "normalise + fuzzy", "a": "Ridgeline Insurance Brokers Pty Ltd", "b": "Ridgeline Insurance Brokers", "same": true, "pred": true, "layer": "normalise", "score": 100.0}
+{"split": "dev", "resolver": "normalise + fuzzy", "a": "Ridgeline Insurance Brokers Pty Ltd", "b": "Pinewood Insurance Underwriting Agency", "same": false, "pred": false, "layer": "fuzzy", "score": 52.3}
+{"split": "dev", "resolver": "normalise + fuzzy", "a": "Meridian Claims Services", "b": "Meridian Specialty Underwriters Pty Ltd", "same": false, "pred": false, "layer": "fuzzy", "score": 61.8}
+{"split": "dev", "resolver": "normalise + fuzzy", "a": "Kookaburra Commercial Insurance Co", "b": "Kookaburra Commercial", "same": true, "pred": true, "layer": "fuzzy", "score": 100.0}
+{"split": "dev", "resolver": "normalise + fuzzy", "a": "Harbourline Mutual Insurance Ltd", "b": "Harbourline Mutual", "same": true, "pred": true, "layer": "fuzzy", "score": 100.0}
+{"split": "dev", "resolver": "normalise + fuzzy", "a": "Harbourline Mutual Insurance Ltd", "b": "Harbourview Mutual Underwriting", "same": false, "pred": false, "layer": "fuzzy", "score": 67.8}
+{"split": "dev", "resolver": "normalise + fuzzy", "a": "Tasman Ridge Underwriting Agency Pty Ltd", "b": "Tasman Ridge Underwriting", "same": true, "pred": true, "layer": "fuzzy", "score": 100.0}
+{"split": "dev", "resolver": "normalise + fuzzy", "a": "Northshore Risk Partners Pty Ltd", "b": "Northshore Risk Services Pty Ltd", "same": false, "pred": false, "layer": "fuzzy", "score": 79.2}
+{"split": "dev", "resolver": "normalise + fuzzy", "a": "Greenleaf Property Services Pty Ltd", "b": "Greenleaf Property", "same": true, "pred": true, "layer": "fuzzy", "score": 100.0}
+{"split": "dev", "resolver": "normalise + fuzzy", "a": "Highline Brokers Pty Ltd", "b": "Clearwater Insurance Brokers Pty Ltd", "same": false, "pred": false, "layer": "fuzzy", "score": 60.9}
+{"split": "dev", "resolver": "normalise + fuzzy + LLM", "a": "Greenleaf Property Services Pty Ltd", "b": "Greenleaf Property Se rvices Pty Ltd", "same": true, "pred": true, "layer": "normalise", "score": 90.9}
+{"split": "dev", "resolver": "normalise + fuzzy + LLM", "a": "Pinewood Insurance Underwriting Agency", "b": "Pinewood Insurance Un derwriting Agency", "same": true, "pred": true, "layer": "normalise", "score": 93.5}
+{"split": "dev", "resolver": "normalise + fuzzy + LLM", "a": "Pinewood Insurance Underwriting Agency", "b": "Pinewood Underwriting", "same": true, "pred": true, "layer": "fuzzy", "score": 100.0}
+{"split": "dev", "resolver": "normalise + fuzzy + LLM", "a": "Pinewood Insurance Underwriting Agency", "b": "Verity Insurance Underwriting Agency", "same": false, "pred": false, "layer": "llm", "score": 89.2}
+{"split": "dev", "resolver": "normalise + fuzzy + LLM", "a": "Ridgeline Insurance Brokers Pty Ltd", "b": "Ridgeline Insurance Brokers", "same": true, "pred": true, "layer": "normalise", "score": 100.0}
+{"split": "dev", "resolver": "normalise + fuzzy + LLM", "a": "Ridgeline Insurance Brokers Pty Ltd", "b": "Pinewood Insurance Underwriting Agency", "same": false, "pred": false, "layer": "llm", "score": 52.3}
+{"split": "dev", "resolver": "normalise + fuzzy + LLM", "a": "Meridian Claims Services", "b": "Meridian Specialty Underwriters Pty Ltd", "same": false, "pred": false, "layer": "llm", "score": 61.8}
+{"split": "dev", "resolver": "normalise + fuzzy + LLM", "a": "Kookaburra Commercial Insurance Co", "b": "Kookaburra Commercial", "same": true, "pred": true, "layer": "fuzzy", "score": 100.0}
+{"split": "dev", "resolver": "normalise + fuzzy + LLM", "a": "Harbourline Mutual Insurance Ltd", "b": "Harbourline Mutual", "same": true, "pred": true, "layer": "fuzzy", "score": 100.0}
+{"split": "dev", "resolver": "normalise + fuzzy + LLM", "a": "Harbourline Mutual Insurance Ltd", "b": "Harbourview Mutual Underwriting", "same": false, "pred": false, "layer": "llm", "score": 67.8}
+{"split": "dev", "resolver": "normalise + fuzzy + LLM", "a": "Tasman Ridge Underwriting Agency Pty Ltd", "b": "Tasman Ridge Underwriting", "same": true, "pred": true, "layer": "fuzzy", "score": 100.0}
+{"split": "dev", "resolver": "normalise + fuzzy + LLM", "a": "Northshore Risk Partners Pty Ltd", "b": "Northshore Risk Services Pty Ltd", "same": false, "pred": false, "layer": "llm", "score": 79.2}
+{"split": "dev", "resolver": "normalise + fuzzy + LLM", "a": "Greenleaf Property Services Pty Ltd", "b": "Greenleaf Property", "same": true, "pred": true, "layer": "fuzzy", "score": 100.0}
+{"split": "dev", "resolver": "normalise + fuzzy + LLM", "a": "Highline Brokers Pty Ltd", "b": "Clearwater Insurance Brokers Pty Ltd", "same": false, "pred": false, "layer": "llm", "score": 60.9}
+{"split": "test", "resolver": "normalise + fuzzy", "a": "Tide Gym Pty Ltd", "b": "Tide Gym", "same": true, "pred": true, "layer": "normalise", "score": 100.0}
+{"split": "test", "resolver": "normalise + fuzzy", "a": "Southern Cross Commercial Underwriters Pty Ltd", "b": "Southern Cross Commercial Underwriters", "same": true, "pred": true, "layer": "normalise", "score": 100.0}
+{"split": "test", "resolver": "normalise + fuzzy", "a": "Southern Cross Commercial Underwriters Pty Ltd", "b": "Southern Cross Commercial Underwriting", "same": true, "pred": false, "layer": "fuzzy", "score": 92.1}
+{"split": "test", "resolver": "normalise + fuzzy", "a": "Southern Cross Commercial Underwriters Pty Ltd", "b": "Verity Insurance Underwriting Agency", "same": false, "pred": false, "layer": "fuzzy", "score": 51.4}
+{"split": "test", "resolver": "normalise + fuzzy", "a": "Summit Risk Brokers Pty Ltd", "b": "Compass Enterprises Pty Ltd", "same": false, "pred": false, "layer": "fuzzy", "score": 36.8}
+{"split": "test", "resolver": "normalise + fuzzy", "a": "Blackwood Assurance Limited", "b": "Blackwood Assurance", "same": true, "pred": true, "layer": "normalise", "score": 100.0}
+{"split": "test", "resolver": "normalise + fuzzy", "a": "Eastgate General Insurance Limited", "b": "Eastgate General", "same": true, "pred": true, "layer": "fuzzy", "score": 100.0}
+{"split": "test", "resolver": "normalise + fuzzy", "a": "Eastgate General Insurance Limited", "b": "Westgate General Insurance Limited", "same": false, "pred": false, "layer": "fuzzy", "score": 96.2}
+{"split": "test", "resolver": "normalise + fuzzy", "a": "Zurich North America", "b": "Zurich American Insurance Company", "same": true, "pred": false, "layer": "fuzzy", "score": 75.6}
+{"split": "test", "resolver": "normalise + fuzzy", "a": "Meridian Specialty Underwriters Pty Ltd", "b": "Meridian Specialty", "same": true, "pred": true, "layer": "fuzzy", "score": 100.0}
+{"split": "test", "resolver": "normalise + fuzzy", "a": "Meridian Specialty Underwriters Pty Ltd", "b": "Meridian Claims Services", "same": false, "pred": false, "layer": "fuzzy", "score": 61.8}
+{"split": "test", "resolver": "normalise + fuzzy", "a": "Pacific Crest Brokers Pty Ltd", "b": "Pacific Coast Brokers Pty Ltd", "same": false, "pred": false, "layer": "fuzzy", "score": 90.5}
+{"split": "test", "resolver": "normalise + fuzzy", "a": "Copperleaf Bakery Pty Ltd", "b": "Copperleaf Bakery", "same": true, "pred": true, "layer": "normalise", "score": 100.0}
+{"split": "test", "resolver": "normalise + fuzzy", "a": "Summit Risk Brokers Pty Ltd", "b": "Summit Risk Brokers", "same": true, "pred": true, "layer": "normalise", "score": 100.0}
+{"split": "test", "resolver": "normalise + fuzzy + LLM", "a": "Tide Gym Pty Ltd", "b": "Tide Gym", "same": true, "pred": true, "layer": "normalise", "score": 100.0}
+{"split": "test", "resolver": "normalise + fuzzy + LLM", "a": "Southern Cross Commercial Underwriters Pty Ltd", "b": "Southern Cross Commercial Underwriters", "same": true, "pred": true, "layer": "normalise", "score": 100.0}
+{"split": "test", "resolver": "normalise + fuzzy + LLM", "a": "Southern Cross Commercial Underwriters Pty Ltd", "b": "Southern Cross Commercial Underwriting", "same": true, "pred": true, "layer": "llm", "score": 92.1}
+{"split": "test", "resolver": "normalise + fuzzy + LLM", "a": "Southern Cross Commercial Underwriters Pty Ltd", "b": "Verity Insurance Underwriting Agency", "same": false, "pred": false, "layer": "llm", "score": 51.4}
+{"split": "test", "resolver": "normalise + fuzzy + LLM", "a": "Summit Risk Brokers Pty Ltd", "b": "Compass Enterprises Pty Ltd", "same": false, "pred": false, "layer": "fuzzy", "score": 36.8}
+{"split": "test", "resolver": "normalise + fuzzy + LLM", "a": "Blackwood Assurance Limited", "b": "Blackwood Assurance", "same": true, "pred": true, "layer": "normalise", "score": 100.0}
+{"split": "test", "resolver": "normalise + fuzzy + LLM", "a": "Eastgate General Insurance Limited", "b": "Eastgate General", "same": true, "pred": true, "layer": "fuzzy", "score": 100.0}
+{"split": "test", "resolver": "normalise + fuzzy + LLM", "a": "Eastgate General Insurance Limited", "b": "Westgate General Insurance Limited", "same": false, "pred": false, "layer": "llm", "score": 96.2}
+{"split": "test", "resolver": "normalise + fuzzy + LLM", "a": "Zurich North America", "b": "Zurich American Insurance Company", "same": true, "pred": true, "layer": "llm", "score": 75.6}
+{"split": "test", "resolver": "normalise + fuzzy + LLM", "a": "Meridian Specialty Underwriters Pty Ltd", "b": "Meridian Specialty", "same": true, "pred": true, "layer": "fuzzy", "score": 100.0}
+{"split": "test", "resolver": "normalise + fuzzy + LLM", "a": "Meridian Specialty Underwriters Pty Ltd", "b": "Meridian Claims Services", "same": false, "pred": false, "layer": "llm", "score": 61.8}
+{"split": "test", "resolver": "normalise + fuzzy + LLM", "a": "Pacific Crest Brokers Pty Ltd", "b": "Pacific Coast Brokers Pty Ltd", "same": false, "pred": false, "layer": "llm", "score": 90.5}
+{"split": "test", "resolver": "normalise + fuzzy + LLM", "a": "Copperleaf Bakery Pty Ltd", "b": "Copperleaf Bakery", "same": true, "pred": true, "layer": "normalise", "score": 100.0}
+{"split": "test", "resolver": "normalise + fuzzy + LLM", "a": "Summit Risk Brokers Pty Ltd", "b": "Summit Risk Brokers", "same": true, "pred": true, "layer": "normalise", "score": 100.0}

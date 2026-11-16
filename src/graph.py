@@ -61,15 +61,26 @@ def build_graph(extractions: dict[str, DocumentExtraction], resolver: Resolver |
             doc_policy = norm_id(e.policies[0].policy_number) if e.policies else primary
             dates = {d.kind: norm_date(d.date) or d.date for d in e.dates}
 
-            def mention(node, page, **attrs):
-                G.add_edge(node, dnode, predicate="MENTIONED_IN", source_doc=doc, page=page,
-                           attrs={k: v for k, v in attrs.items() if v is not None})
+            def mention(node, page, dnode=dnode, doc=doc, **attrs):
+                G.add_edge(
+                    node,
+                    dnode,
+                    predicate="MENTIONED_IN",
+                    source_doc=doc,
+                    page=page,
+                    attrs={k: v for k, v in attrs.items() if v is not None},
+                )
 
             for p in e.policies:
                 n = f"policy:{norm_id(p.policy_number)}"
                 G.add_node(n, type="policy", label=p.policy_number, pack=pack)
-                mention(n, p.page, premium=p.premium, policy_start=dates.get("policy_start"),
-                        policy_end=dates.get("policy_end"))
+                mention(
+                    n,
+                    p.page,
+                    premium=p.premium,
+                    policy_start=dates.get("policy_start"),
+                    policy_end=dates.get("policy_end"),
+                )
             for p in e.parties:
                 cname = canon.get(p.name, p.name)
                 n = f"party:{norm_name(cname)}"
@@ -77,8 +88,15 @@ def build_graph(extractions: dict[str, DocumentExtraction], resolver: Resolver |
                     G.add_node(n, type="party", label=cname, names=set(), roles=set(), pack=pack)
                 G.nodes[n]["names"].add(p.name)
                 G.nodes[n]["roles"].add(p.role)
-                mention(n, p.page, role=p.role, name=p.name, abn=norm_abn(p.abn), abn_raw=p.abn,
-                        abn_format=abn_format(p.abn))
+                mention(
+                    n,
+                    p.page,
+                    role=p.role,
+                    name=p.name,
+                    abn=norm_abn(p.abn),
+                    abn_raw=p.abn,
+                    abn_format=abn_format(p.abn),
+                )
             for c in e.coverages:
                 ctype = norm_coverage(c.coverage_type)
                 n = f"coverage:{doc_policy or pack}|{ctype}"
@@ -87,18 +105,32 @@ def build_graph(extractions: dict[str, DocumentExtraction], resolver: Resolver |
             for loc in e.locations:
                 n = _location_node(pack, loc, numbered, G)
                 G.add_node(n, type="location", label=loc.address, pack=pack)
-                mention(n, loc.page, address=norm_address(loc.address), address_raw=loc.address,
-                        total_declared_value=loc.total_declared_value, currency=loc.currency)
+                mention(
+                    n,
+                    loc.page,
+                    address=norm_address(loc.address),
+                    address_raw=loc.address,
+                    total_declared_value=loc.total_declared_value,
+                    currency=loc.currency,
+                )
             for cl in e.claims:
                 n = f"claim:{norm_id(cl.claim_no)}"
                 G.add_node(n, type="claim", label=cl.claim_no, pack=pack)
-                mention(n, cl.page, loss_date=norm_date(cl.loss_date) or cl.loss_date,
-                        reported_date=norm_date(cl.reported_date) or cl.reported_date, incurred=cl.incurred,
-                        status=cl.status, category=cl.category, valuation_date=dates.get("valuation_date"))
+                mention(
+                    n,
+                    cl.page,
+                    loss_date=norm_date(cl.loss_date) or cl.loss_date,
+                    reported_date=norm_date(cl.reported_date) or cl.reported_date,
+                    incurred=cl.incurred,
+                    status=cl.status,
+                    category=cl.category,
+                    valuation_date=dates.get("valuation_date"),
+                )
             if e.declared_total is not None:
                 G.nodes[dnode]["declared_total"] = e.declared_total
-                G.nodes[dnode]["row_totals"] = [loc.total_declared_value for loc in e.locations
-                                                if loc.location_no is not None]
+                G.nodes[dnode]["row_totals"] = [
+                    loc.total_declared_value for loc in e.locations if loc.location_no is not None
+                ]
             for r in e.relationships:
                 subj = f"policy:{norm_id(r.subject)}"
                 if subj not in G:
@@ -148,8 +180,11 @@ def _relationship_object(predicate, obj, pack, canon, policy, numbered) -> str |
 
 def observations(G: nx.MultiDiGraph, node: str) -> list[dict]:
     """Attribute observations of an entity, one per document mention."""
-    return [{"doc": d.split(":", 1)[1], "page": data.get("page"), **data.get("attrs", {})}
-            for _, d, data in G.out_edges(node, data=True) if data.get("predicate") == "MENTIONED_IN"]
+    return [
+        {"doc": d.split(":", 1)[1], "page": data.get("page"), **data.get("attrs", {})}
+        for _, d, data in G.out_edges(node, data=True)
+        if data.get("predicate") == "MENTIONED_IN"
+    ]
 
 
 def _policy_node(G, policy_number: str) -> str:
@@ -225,8 +260,16 @@ def detect_inconsistencies(G: nx.MultiDiGraph) -> list[dict]:
     flags: list[dict] = []
 
     def flag(pack, ftype, node, attribute, obs, detail):
-        flags.append({"pack": pack, "flag_type": ftype, "node": node, "attribute": attribute,
-                      "observations": obs, "detail": detail})
+        flags.append(
+            {
+                "pack": pack,
+                "flag_type": ftype,
+                "node": node,
+                "attribute": attribute,
+                "observations": obs,
+                "detail": detail,
+            }
+        )
 
     for n, data in G.nodes(data=True):
         t = data.get("type")
@@ -246,44 +289,80 @@ def detect_inconsistencies(G: nx.MultiDiGraph) -> list[dict]:
             digits = {o.get("abn") for o in obs if o.get("abn")}
             fmts = {o["doc"]: o["abn_raw"] for o in obs if o.get("abn_raw")}
             if len(digits) == 1 and len({abn_format(v) for v in fmts.values()}) > 1:
-                flag(pack, "abn_formatting_inconsistency", n, "abn", fmts,
-                     f"ABN {next(iter(digits))} printed in {len(set(map(abn_format, fmts.values())))} formats")
+                flag(
+                    pack,
+                    "abn_formatting_inconsistency",
+                    n,
+                    "abn",
+                    fmts,
+                    f"ABN {next(iter(digits))} printed in {len(set(map(abn_format, fmts.values())))} formats",
+                )
         # 3. Claim loss date after the date it was reported or after the valuation date.
         if t == "claim":
             for o in obs:
                 loss, rep, val = o.get("loss_date"), o.get("reported_date"), o.get("valuation_date")
                 if loss and ((rep and loss > rep) or (val and loss > val)):
-                    flag(pack, "loss_date_outside_policy_period", n, "loss_date",
-                         {o["doc"]: loss}, f"{data['label']}: loss {loss} after reported {rep} / valuation {val}")
+                    flag(
+                        pack,
+                        "loss_date_outside_policy_period",
+                        n,
+                        "loss_date",
+                        {o["doc"]: loss},
+                        f"{data['label']}: loss {loss} after reported {rep} / valuation {val}",
+                    )
 
     # 4. Pack-level rules.
     packs = {d.get("pack") for _, d in G.nodes(data=True) if d.get("type") == "document"}
     for pack in sorted(p for p in packs if p):
-        locs = [(n, o) for n, d in G.nodes(data=True) if d.get("type") == "location" and d.get("pack") == pack
-                for o in observations(G, n) if o.get("currency")]
+        locs = [
+            (n, o)
+            for n, d in G.nodes(data=True)
+            if d.get("type") == "location" and d.get("pack") == pack
+            for o in observations(G, n)
+            if o.get("currency")
+        ]
         cur = Counter(o["currency"] for _, o in locs)
         if cur:
             main = "AUD" if "AUD" in cur else cur.most_common(1)[0][0]
             for n, o in locs:
                 if o["currency"] != main:
-                    flag(pack, "currency_mismatch", n, "currency", {o["doc"]: o["currency"]},
-                         f"{G.nodes[n]['label']}: value declared in {o['currency']}, pack currency {main}")
+                    flag(
+                        pack,
+                        "currency_mismatch",
+                        n,
+                        "currency",
+                        {o["doc"]: o["currency"]},
+                        f"{G.nodes[n]['label']}: value declared in {o['currency']}, pack currency {main}",
+                    )
         policies = sorted(n for n, d in G.nodes(data=True) if d.get("type") == "policy" and d.get("pack") == pack)
         if len(policies) > 1:
             obs = {}
             for p in policies:
                 docs = {o["doc"] for o in observations(G, p)} | {
-                    d["source_doc"] for _, _, d in G.out_edges(p, data=True) if d.get("source_doc")}
+                    d["source_doc"] for _, _, d in G.out_edges(p, data=True) if d.get("source_doc")
+                }
                 for doc in docs:
                     obs[doc] = G.nodes[p]["label"]
-            flag(pack, "policy_number_mismatch", f"pack:{pack}", "policy_number", obs,
-                 f"{len(policies)} different policy numbers in one submission")
+            flag(
+                pack,
+                "policy_number_mismatch",
+                f"pack:{pack}",
+                "policy_number",
+                obs,
+                f"{len(policies)} different policy numbers in one submission",
+            )
         for n, d in G.nodes(data=True):
             if d.get("type") == "document" and d.get("pack") == pack and d.get("declared_total") is not None:
                 rows = [v for v in d.get("row_totals", []) if v is not None]
                 if rows and abs(sum(rows) - d["declared_total"]) > 1:
-                    flag(pack, "sov_total_mismatch", n, "declared_total", {d["label"]: d["declared_total"]},
-                         f"displayed total {d['declared_total']:,.0f} != sum of rows {sum(rows):,.0f}")
+                    flag(
+                        pack,
+                        "sov_total_mismatch",
+                        n,
+                        "declared_total",
+                        {d["label"]: d["declared_total"]},
+                        f"displayed total {d['declared_total']:,.0f} != sum of rows {sum(rows):,.0f}",
+                    )
     return flags
 
 

@@ -1,0 +1,14 @@
+{
+  "_about": "Real inconsistencies found by reading the PDFs that the dataset does NOT label. Detector flags matching these are reported as 'true (unlabelled)', not as false flags. 'corroborating' lists flag types that are a second symptom of a labelled flag.",
+  "unlabelled": [
+    {"pack": "PACK000002", "flag_type": "limit_mismatch", "node_contains": "public_liability", "evidence": "Policy schedule: Public Liability AUD $10,000,000; certificate of currency: AUD $20,000,000."},
+    {"pack": "PACK000002", "flag_type": "limit_mismatch", "node_contains": "property", "evidence": "Policy schedule: Property AUD $2,000,000; certificate of currency: AUD $1,000,000."}
+  ],
+  "corroborating": [
+    {"flag_type": "claim_attribute_mismatch", "attribute": "loss_date", "labelled": "loss_date_outside_policy_period", "evidence": "The overridden loss-run loss date disagrees with the date declared for the same claim in the application."}
+  ],
+  "out_of_schema": [
+    {"pack": "PACK000001", "evidence": "Broker email says 25 years operating; application says 17 years trading."},
+    {"pack": "PACK000002", "evidence": "Broker email says 15 years of trading history; application says 29 years trading."}
+  ]
+}

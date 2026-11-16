@@ -124,9 +124,7 @@ def _from_row(row: dict) -> dict:
                 {"coverage_type": norm_coverage(cov), "limit": lim, "deductible": deds.get(cov), "page": 1}
             )
         for loc in _jl(row, "displayed_locations_json") or []:
-            out["locations"].append(
-                {"location_no": loc["location_no"], "address": loc["displayed_address"], "page": 1}
-            )
+            out["locations"].append({"location_no": loc["location_no"], "address": loc["displayed_address"], "page": 1})
 
     elif t == "certificate_of_currency":
         party("insurer", row["insurer_name"])
@@ -187,8 +185,14 @@ def _from_row(row: dict) -> dict:
     return out
 
 
-_KEY_FIELD = {"party": "role", "coverage": "coverage_type", "location": "location_no", "claim": "claim_no",
-              "date": "kind", "policy": "policy_number"}
+_KEY_FIELD = {
+    "party": "role",
+    "coverage": "coverage_type",
+    "location": "location_no",
+    "claim": "claim_no",
+    "date": "kind",
+    "policy": "policy_number",
+}
 
 
 def _apply_hand(doc: dict, hand: dict) -> dict:

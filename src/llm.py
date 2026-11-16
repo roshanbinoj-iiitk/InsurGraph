@@ -100,7 +100,12 @@ def _is_retryable(exc: BaseException) -> bool:
     if any(k in name for k in ("ratelimit", "timeout", "connection", "unavailable", "internalserver", "servererror")):
         return True
     return getattr(exc, "code", None) in (429, 500, 502, 503, 504) or getattr(exc, "status_code", None) in (
-        429, 500, 502, 503, 504)
+        429,
+        500,
+        502,
+        503,
+        504,
+    )
 
 
 def _retry_after(exc: Exception) -> float | None:

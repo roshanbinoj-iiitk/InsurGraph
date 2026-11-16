@@ -45,8 +45,14 @@ def scorecard_rows(sc: Scorecard, tags: dict) -> list[dict]:
         val = getattr(sc, key)
         ci = sc.ci.get(key)
         rows.append(
-            {**tags, "mode": sc.mode, "type": key, "f1": None if val is None else round(val, 4),
-             "f1_ci_low": ci and round(ci[0], 4), "f1_ci_high": ci and round(ci[1], 4)}
+            {
+                **tags,
+                "mode": sc.mode,
+                "type": key,
+                "f1": None if val is None else round(val, 4),
+                "f1_ci_low": ci and round(ci[0], 4),
+                "f1_ci_high": ci and round(ci[1], 4),
+            }
         )
     return rows
 

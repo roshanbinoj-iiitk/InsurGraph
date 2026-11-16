@@ -153,9 +153,7 @@ class DocumentExtraction(BaseModel):
     claims: list[Claim] = Field(default_factory=list)
     dates: list[KeyDate] = Field(default_factory=list)
     relationships: list[Relationship] = Field(default_factory=list)
-    declared_total: float | None = Field(
-        default=None, description="Statement of values displayed grand total"
-    )
+    declared_total: float | None = Field(default=None, description="Statement of values displayed grand total")
 
     money_fields = field_validator("declared_total", mode="before")(_money)
 

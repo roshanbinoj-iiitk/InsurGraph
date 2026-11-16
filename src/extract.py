@@ -15,7 +15,7 @@ import argparse
 import json
 import re
 import time
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 from pydantic import ValidationError
@@ -124,8 +124,18 @@ def salvage(data: dict) -> tuple[DocumentExtraction, int]:
 def extract_document(doc: Document, model: str, prompt: str, use_cache: bool = True) -> tuple[DocumentExtraction, dict]:
     system, user_tpl = load_prompt(prompt)
     user = user_tpl.replace("{doc_id}", doc.doc_id).replace("{document}", doc.render())
-    meta = {"doc_id": doc.doc_id, "model": model, "prompt": prompt, "attempts": 0, "status": None,
-            "errors": [], "prompt_tokens": 0, "completion_tokens": 0, "latency_s": 0.0, "cached": True}
+    meta = {
+        "doc_id": doc.doc_id,
+        "model": model,
+        "prompt": prompt,
+        "attempts": 0,
+        "status": None,
+        "errors": [],
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "latency_s": 0.0,
+        "cached": True,
+    }
     data = None
     for attempt in range(2):
         meta["attempts"] = attempt + 1
@@ -165,8 +175,14 @@ def load_predictions(run_dir: Path) -> dict[str, DocumentExtraction]:
     return out
 
 
-def run(model: str, prompt: str, split: str, source: str = "all", doc_filter: list[str] | None = None,
-        use_cache: bool = True) -> Path:
+def run(
+    model: str,
+    prompt: str,
+    split: str,
+    source: str = "all",
+    doc_filter: list[str] | None = None,
+    use_cache: bool = True,
+) -> Path:
     docs = [d for d in load_corpus(source) if split_of(d.doc_id) == split]
     if doc_filter:
         docs = [d for d in docs if any(f in d.doc_id for f in doc_filter)]
@@ -178,8 +194,11 @@ def run(model: str, prompt: str, split: str, source: str = "all", doc_filter: li
         ext, meta = extract_document(doc, model, prompt, use_cache)
         (run_dir / "predictions" / f"{doc.doc_id}.json").write_text(ext.model_dump_json(indent=1))
         log.append(meta)
-        print(f"[{i}/{len(docs)}] {doc.doc_id}: {meta['status']} ({meta['latency_s']:.0f}s"
-              f"{', cached' if meta['cached'] else ''})", flush=True)
+        print(
+            f"[{i}/{len(docs)}] {doc.doc_id}: {meta['status']} ({meta['latency_s']:.0f}s"
+            f"{', cached' if meta['cached'] else ''})",
+            flush=True,
+        )
     with open(run_dir / "extraction_log.jsonl", "w") as f:
         for m in log:
             f.write(json.dumps(m) + "\n")
@@ -187,8 +206,9 @@ def run(model: str, prompt: str, split: str, source: str = "all", doc_filter: li
     return run_dir
 
 
-def evaluate_run(run_dir: Path, model: str, prompt: str, split: str, log: list[dict] | None = None,
-                 wall_s: float | None = None) -> dict:
+def evaluate_run(
+    run_dir: Path, model: str, prompt: str, split: str, log: list[dict] | None = None, wall_s: float | None = None
+) -> dict:
     if log is None:
         log = [json.loads(line) for line in open(run_dir / "extraction_log.jsonl")]
     preds = load_predictions(run_dir)
@@ -218,13 +238,14 @@ def evaluate_run(run_dir: Path, model: str, prompt: str, split: str, log: list[d
         "prompt_tokens": sum(m["prompt_tokens"] for m in log),
         "completion_tokens": sum(m["completion_tokens"] for m in log),
         "llm_latency_s": round(sum(m["latency_s"] for m in log), 1),
-        "timestamp": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "timestamp": datetime.now(UTC).isoformat(timespec="seconds"),
     }
     if wall_s is not None:
         tags["wall_s"] = round(wall_s, 1)
     write_report(run_dir, cards, tags)
-    summary = {k: {"entity_macro_f1": c.entity_macro_f1, "relation_macro_f1": c.relation_macro_f1}
-               for k, c in cards.items()}
+    summary = {
+        k: {"entity_macro_f1": c.entity_macro_f1, "relation_macro_f1": c.relation_macro_f1} for k, c in cards.items()
+    }
     (run_dir / "meta.json").write_text(json.dumps({**tags, "summary": summary}, indent=2))
     return summary
 

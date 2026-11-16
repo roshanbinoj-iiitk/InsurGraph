@@ -65,8 +65,15 @@ def get_collection(source: str = "real", rebuild: bool = False):
             ids=[c.chunk_id for c in chunks],
             documents=[c.text for c in chunks],
             embeddings=emb,
-            metadatas=[{"doc_id": c.doc_id, "page": c.page, "pack": c.doc_id.split("_", 1)[0],
-                        "doc_type": c.doc_id.split("_", 2)[-1]} for c in chunks],
+            metadatas=[
+                {
+                    "doc_id": c.doc_id,
+                    "page": c.page,
+                    "pack": c.doc_id.split("_", 1)[0],
+                    "doc_type": c.doc_id.split("_", 2)[-1],
+                }
+                for c in chunks
+            ],
         )
     _collection = col
     return col
@@ -87,8 +94,9 @@ def retrieve(question: str, k: int = 5, pack: str | None = None, source: str = "
     res = col.query(query_embeddings=q, n_results=k, where={"pack": pack} if pack else None)
     return [
         Retrieved(cid, meta["doc_id"], meta["page"], doc, dist)
-        for cid, meta, doc, dist in zip(res["ids"][0], res["metadatas"][0], res["documents"][0],
-                                        res["distances"][0], strict=True)
+        for cid, meta, doc, dist in zip(
+            res["ids"][0], res["metadatas"][0], res["documents"][0], res["distances"][0], strict=True
+        )
     ]
 
 
@@ -112,13 +120,25 @@ def route_to_pack(question: str, G: nx.MultiDiGraph) -> str | None:
     return max(votes, key=votes.get) if votes else None
 
 
-def answer(question: str, model: str = "gemini-flash-lite", k: int = 5, variant: str = "plain",
-           G: nx.MultiDiGraph | None = None) -> dict:
+def answer(
+    question: str,
+    model: str = "gemini-flash-lite",
+    k: int = 5,
+    variant: str = "plain",
+    G: nx.MultiDiGraph | None = None,
+) -> dict:
     pack = route_to_pack(question, G) if variant == "graph" and G is not None else None
     hits = retrieve(question, k=k, pack=pack)
     context = "\n\n---\n\n".join(h.text for h in hits)
-    res = llm.complete(model, ANSWER_SYSTEM, f"Context:\n{context}\n\nQuestion: {question}\nAnswer:",
-                       temperature=0.0, max_tokens=300)
-    return {"question": question, "answer": res.text.strip(), "variant": variant, "routed_pack": pack,
-            "retrieved": [{"chunk_id": h.chunk_id, "doc_id": h.doc_id, "page": h.page,
-                           "distance": round(h.distance, 4)} for h in hits]}
+    res = llm.complete(
+        model, ANSWER_SYSTEM, f"Context:\n{context}\n\nQuestion: {question}\nAnswer:", temperature=0.0, max_tokens=300
+    )
+    return {
+        "question": question,
+        "answer": res.text.strip(),
+        "variant": variant,
+        "routed_pack": pack,
+        "retrieved": [
+            {"chunk_id": h.chunk_id, "doc_id": h.doc_id, "page": h.page, "distance": round(h.distance, 4)} for h in hits
+        ],
+    }

@@ -164,8 +164,14 @@ def match_items(etype: str, gold: list, pred: list, mode: str = "strict", doc_id
         else:
             bad = [f for f in fields if not field_eq(etype, f, g_norm[gi].get(f), p_norm[pi].get(f), mode)]
             res.errors.append(
-                {"doc": doc_id, "type": etype, "kind": "field_error", "fields": bad,
-                 "gold": g_norm[gi], "pred": p_norm[pi]}
+                {
+                    "doc": doc_id,
+                    "type": etype,
+                    "kind": "field_error",
+                    "fields": bad,
+                    "gold": g_norm[gi],
+                    "pred": p_norm[pi],
+                }
             )
     for gi, g in enumerate(g_norm):
         if gi not in used_g:

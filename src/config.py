@@ -44,9 +44,7 @@ class ModelSpec:
 
 MODELS: dict[str, ModelSpec] = {
     # Planned free-tier API models (need GEMINI_API_KEY / GROQ_API_KEY).
-    "gemini-flash-lite": ModelSpec(
-        "gemini-flash-lite", "gemini", "gemini-3.5-flash-lite", rpm=15, tpm=250_000
-    ),
+    "gemini-flash-lite": ModelSpec("gemini-flash-lite", "gemini", "gemini-3.5-flash-lite", rpm=15, tpm=250_000),
     "gpt-oss-120b": ModelSpec(
         "gpt-oss-120b",
         "groq",

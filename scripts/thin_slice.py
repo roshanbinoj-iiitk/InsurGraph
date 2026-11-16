@@ -41,14 +41,17 @@ def main() -> None:
     G = build_graph(preds)
     rag = answer(QUESTION, model=args.model, G=G)
     lines = [
-        "# Thin slice (Milestone 1)", "",
-        f"Model `{args.model}`, prompt `zero_shot_v1`, documents: {', '.join(DOCS)}", "",
+        "# Thin slice (Milestone 1)",
+        "",
+        f"Model `{args.model}`, prompt `zero_shot_v1`, documents: {', '.join(DOCS)}",
+        "",
         f"* Extraction (strict): entity macro-F1 {sc.entity_macro_f1:.3f}, relationship macro-F1 "
         f"{sc.relation_macro_f1:.3f}",
         f"* Graph: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges",
         f"* Coverages of PI-2025-981268: {sorted(coverages_for_policy(G, 'PI-2025-981268'))}",
         f"* Parties of PI-2025-981268: {json.dumps(parties_for_policy(G, 'PI-2025-981268'))}",
-        f"* RAG: Q: {QUESTION}  A: **{rag['answer']}** (top doc {rag['retrieved'][0]['doc_id']})", "",
+        f"* RAG: Q: {QUESTION}  A: **{rag['answer']}** (top doc {rag['retrieved'][0]['doc_id']})",
+        "",
     ]
     (out / "summary.md").write_text("\n".join(lines))
     print("\n".join(lines))

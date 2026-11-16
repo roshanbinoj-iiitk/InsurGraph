@@ -35,7 +35,9 @@ def categorise(e: dict, spurious_by_doc: dict) -> str:
     if kind == "missed":
         g = e["gold"]
         if t == "party":
-            same_name = [s for s in spurious_by_doc[e["doc"]] if s["type"] == "party" and s["pred"].get("name") == g.get("name")]
+            same_name = [
+                s for s in spurious_by_doc[e["doc"]] if s["type"] == "party" and s["pred"].get("name") == g.get("name")
+            ]
             if same_name:
                 return "party role confusion"
             return f"party missed ({g.get('role')})"
@@ -67,9 +69,14 @@ def analyse(run_dir: Path) -> str:
         cats[c] += 1
         if len(examples[c]) < 2:
             examples[c].append(e)
-    lines = [f"# Error analysis: {run_dir.parent.name} / {run_dir.name}", "",
-             f"{len(errors)} strict-mode errors (a field error counts once; it costs one FP and one FN).", "",
-             "| Category | Count |", "|---|---|"]
+    lines = [
+        f"# Error analysis: {run_dir.parent.name} / {run_dir.name}",
+        "",
+        f"{len(errors)} strict-mode errors (a field error counts once; it costs one FP and one FN).",
+        "",
+        "| Category | Count |",
+        "|---|---|",
+    ]
     lines += [f"| {c} | {n} |" for c, n in cats.most_common()]
     lines += ["", "## Examples", ""]
     for c, _ in cats.most_common(8):

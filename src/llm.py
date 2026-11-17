@@ -16,6 +16,7 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import sys
 import threading
 import time
 from collections import deque
@@ -118,6 +119,52 @@ def _retry_after(exc: Exception) -> float | None:
         return None
 
 
+# ------------------------------------------------------------------------------------------
+# API keys: primary plus optional fallback per provider. On a 429 (rate limit / quota) the
+# client switches to the next key and stays there; key values are never logged.
+
+KEY_ENV = {"gemini": "GEMINI_API_KEY", "groq": "GROQ_API_KEY"}
+_active_key: dict[str, int] = {}
+
+
+def api_key_names(provider: str) -> list[str]:
+    """Env var names that hold a non-empty, distinct key for ``provider``, in priority order."""
+    base = KEY_ENV[provider]
+    names, seen = [], set()
+    for name in (base, f"{base}_FALLBACK"):
+        val = (os.getenv(name) or "").strip()
+        if val and val not in seen:
+            names.append(name)
+            seen.add(val)
+    return names
+
+
+def _current_key(provider: str) -> tuple[str, str]:
+    names = api_key_names(provider)
+    if not names:
+        raise RuntimeError(f"{KEY_ENV[provider]} is not set (see .env.example)")
+    name = names[min(_active_key.get(provider, 0), len(names) - 1)]
+    return name, os.environ[name].strip()
+
+
+def rotate_key(provider: str) -> bool:
+    """Switch ``provider`` to its next configured key. Returns False if there is none left."""
+    names = api_key_names(provider)
+    i = _active_key.get(provider, 0)
+    if i + 1 >= len(names):
+        return False
+    _active_key[provider] = i + 1
+    print(f"[llm] {names[i]} rate-limited; switching to {names[i + 1]}", file=sys.stderr, flush=True)
+    return True
+
+
+def _rate_limited(provider: str, exc: Exception) -> RateLimitError:
+    """Wrap a provider 429: rotate to the fallback key (retry at once) or back off as told."""
+    if rotate_key(provider):
+        return RateLimitError(str(exc), retry_after=0)
+    return RateLimitError(str(exc), _retry_after(exc))
+
+
 def cache_key(spec: ModelSpec, system: str, user: str, temperature: float, json_mode: bool, max_tokens: int) -> str:
     payload = json.dumps(
         {
@@ -185,10 +232,10 @@ def _call_openai_compatible(spec, system, user, temperature, json_mode, max_toke
         from groq import Groq
         from groq import RateLimitError as ProviderRateLimit
 
-        key = os.getenv("GROQ_API_KEY")
-        if not key:
-            raise RuntimeError("GROQ_API_KEY is not set (see .env.example)")
-        client = _clients.setdefault("groq", Groq(api_key=key))
+        key_name, key = _current_key("groq")
+        if key_name not in _clients:
+            _clients[key_name] = Groq(api_key=key)
+        client = _clients[key_name]
     else:
         from openai import OpenAI
         from openai import RateLimitError as ProviderRateLimit
@@ -206,6 +253,8 @@ def _call_openai_compatible(spec, system, user, temperature, json_mode, max_toke
     try:
         r = client.chat.completions.create(**kwargs)
     except ProviderRateLimit as e:  # type: ignore[misc]
+        if spec.provider == "groq":
+            raise _rate_limited("groq", e) from e
         raise RateLimitError(str(e), _retry_after(e)) from e
     usage = getattr(r, "usage", None)
     return LLMResult(
@@ -220,10 +269,10 @@ def _call_gemini(spec, system, user, temperature, json_mode, max_tokens) -> LLMR
     from google import genai
     from google.genai import errors, types
 
-    key = os.getenv("GEMINI_API_KEY")
-    if not key:
-        raise RuntimeError("GEMINI_API_KEY is not set (see .env.example)")
-    client = _clients.setdefault("gemini", genai.Client(api_key=key))
+    key_name, key = _current_key("gemini")
+    if key_name not in _clients:
+        _clients[key_name] = genai.Client(api_key=key)
+    client = _clients[key_name]
     cfg = types.GenerateContentConfig(
         system_instruction=system,
         temperature=temperature,
@@ -234,7 +283,7 @@ def _call_gemini(spec, system, user, temperature, json_mode, max_tokens) -> LLMR
         r = client.models.generate_content(model=spec.model_id, contents=user, config=cfg)
     except errors.APIError as e:
         if getattr(e, "code", None) == 429:
-            raise RateLimitError(str(e), _retry_after(e)) from e
+            raise _rate_limited("gemini", e) from e
         raise
     um = getattr(r, "usage_metadata", None)
     return LLMResult(

@@ -1,0 +1,115 @@
+{
+ "_about": "Manual check of LLM-judge decisions on free-text RAG answers: each judged answer was read against the reference and the source document text, and a manual verdict recorded.",
+ "n_checked": 12,
+ "n_agree": 12,
+ "checks": [
+  {
+   "id": "A10",
+   "variant": "plain",
+   "answer": "not found",
+   "judge_correct": false,
+   "manual_correct": false,
+   "agree": true,
+   "note": ""
+  },
+  {
+   "id": "A12",
+   "variant": "plain",
+   "answer": "Theft of tools from premises and the police were notified.",
+   "judge_correct": true,
+   "manual_correct": true,
+   "agree": true,
+   "note": ""
+  },
+  {
+   "id": "A13",
+   "variant": "plain",
+   "answer": "The total for location 1 is declared in USD, whereas the rest of the submission is in AUD.",
+   "judge_correct": true,
+   "manual_correct": true,
+   "agree": true,
+   "note": ""
+  },
+  {
+   "id": "A10",
+   "variant": "graph",
+   "answer": "not found",
+   "judge_correct": false,
+   "manual_correct": false,
+   "agree": true,
+   "note": ""
+  },
+  {
+   "id": "A12",
+   "variant": "graph",
+   "answer": "not found",
+   "judge_correct": false,
+   "manual_correct": false,
+   "agree": true,
+   "note": ""
+  },
+  {
+   "id": "A13",
+   "variant": "graph",
+   "answer": "The total for location 1 is declared in USD, whereas the rest of the submission is in AUD.",
+   "judge_correct": true,
+   "manual_correct": true,
+   "agree": true,
+   "note": ""
+  },
+  {
+   "id": "B07",
+   "variant": "plain",
+   "answer": "not found",
+   "judge_correct": false,
+   "manual_correct": false,
+   "agree": true,
+   "note": ""
+  },
+  {
+   "id": "B09",
+   "variant": "plain",
+   "answer": "not found",
+   "judge_correct": false,
+   "manual_correct": false,
+   "agree": true,
+   "note": ""
+  },
+  {
+   "id": "B13",
+   "variant": "plain",
+   "answer": "No",
+   "judge_correct": true,
+   "manual_correct": true,
+   "agree": true,
+   "note": "Borderline: terse 'No' without the limits; the question only asks whether they agree, so counted correct."
+  },
+  {
+   "id": "B07",
+   "variant": "graph",
+   "answer": "Zara Williams, Operations Manager",
+   "judge_correct": true,
+   "manual_correct": true,
+   "agree": true,
+   "note": ""
+  },
+  {
+   "id": "B09",
+   "variant": "graph",
+   "answer": "not found",
+   "judge_correct": false,
+   "manual_correct": false,
+   "agree": true,
+   "note": ""
+  },
+  {
+   "id": "B13",
+   "variant": "graph",
+   "answer": "No",
+   "judge_correct": true,
+   "manual_correct": true,
+   "agree": true,
+   "note": "Borderline: same as plain."
+  }
+ ]
+}

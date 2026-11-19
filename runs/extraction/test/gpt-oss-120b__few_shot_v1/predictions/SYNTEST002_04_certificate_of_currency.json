@@ -1,0 +1,119 @@
+{
+ "doc_id": "SYNTEST002_04_certificate_of_currency",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_04_certificate_of_currency",
+   "role": "insurer",
+   "name": "Blackwood Assurance",
+   "abn": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_04_certificate_of_currency",
+   "role": "insured",
+   "name": "Southerly Brewing Pty Ltd",
+   "abn": "61 335 248 705"
+  }
+ ],
+ "policies": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_04_certificate_of_currency",
+   "policy_number": "BA-2026-151831",
+   "premium": null
+  }
+ ],
+ "coverages": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_04_certificate_of_currency",
+   "coverage_type": "property",
+   "limit": 7500000.0,
+   "deductible": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_04_certificate_of_currency",
+   "coverage_type": "cyber",
+   "limit": 2000000.0,
+   "deductible": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_04_certificate_of_currency",
+   "coverage_type": "public_liability",
+   "limit": 5000000.0,
+   "deductible": null
+  }
+ ],
+ "locations": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_04_certificate_of_currency",
+   "location_no": null,
+   "address": "70 Foundry Rd, Mount Gambier SA 5290",
+   "total_declared_value": null,
+   "currency": null
+  }
+ ],
+ "claims": [],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_04_certificate_of_currency",
+   "kind": "certificate_date",
+   "date": "2026-04-10"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_04_certificate_of_currency",
+   "kind": "policy_start",
+   "date": "2026-04-11"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_04_certificate_of_currency",
+   "kind": "policy_end",
+   "date": "2027-04-10"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_04_certificate_of_currency",
+   "subject": "BA-2026-151831",
+   "predicate": "HAS_INSURED",
+   "object": "Southerly Brewing Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_04_certificate_of_currency",
+   "subject": "BA-2026-151831",
+   "predicate": "ISSUED_BY",
+   "object": "Blackwood Assurance"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_04_certificate_of_currency",
+   "subject": "BA-2026-151831",
+   "predicate": "HAS_COVERAGE",
+   "object": "property"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_04_certificate_of_currency",
+   "subject": "BA-2026-151831",
+   "predicate": "HAS_COVERAGE",
+   "object": "cyber"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_04_certificate_of_currency",
+   "subject": "BA-2026-151831",
+   "predicate": "HAS_COVERAGE",
+   "object": "public_liability"
+  }
+ ],
+ "declared_total": null
+}

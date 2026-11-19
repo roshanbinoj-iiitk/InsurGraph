@@ -1,0 +1,119 @@
+{
+ "doc_id": "SYNTEST003_04_certificate_of_currency",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_04_certificate_of_currency",
+   "role": "insured",
+   "name": "Ironbark Joinery Pty Ltd",
+   "abn": "47 078 274 587"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_04_certificate_of_currency",
+   "role": "insurer",
+   "name": "Harbourline Mutual",
+   "abn": null
+  }
+ ],
+ "policies": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_04_certificate_of_currency",
+   "policy_number": "HM-2025-545314",
+   "premium": null
+  }
+ ],
+ "coverages": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_04_certificate_of_currency",
+   "coverage_type": "business_interruption",
+   "limit": 250000.0,
+   "deductible": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_04_certificate_of_currency",
+   "coverage_type": "property",
+   "limit": 2000000.0,
+   "deductible": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_04_certificate_of_currency",
+   "coverage_type": "public_liability",
+   "limit": 5000000.0,
+   "deductible": null
+  }
+ ],
+ "locations": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_04_certificate_of_currency",
+   "location_no": null,
+   "address": "Unit 17, 111 Wattle Pde, Bendigo VIC 3550",
+   "total_declared_value": null,
+   "currency": null
+  }
+ ],
+ "claims": [],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_04_certificate_of_currency",
+   "kind": "certificate_date",
+   "date": "2025-11-21"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_04_certificate_of_currency",
+   "kind": "policy_start",
+   "date": "2025-11-23"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_04_certificate_of_currency",
+   "kind": "policy_end",
+   "date": "2026-11-22"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_04_certificate_of_currency",
+   "subject": "HM-2025-545314",
+   "predicate": "HAS_INSURED",
+   "object": "Ironbark Joinery Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_04_certificate_of_currency",
+   "subject": "HM-2025-545314",
+   "predicate": "ISSUED_BY",
+   "object": "Harbourline Mutual"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_04_certificate_of_currency",
+   "subject": "HM-2025-545314",
+   "predicate": "HAS_COVERAGE",
+   "object": "business_interruption"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_04_certificate_of_currency",
+   "subject": "HM-2025-545314",
+   "predicate": "HAS_COVERAGE",
+   "object": "property"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_04_certificate_of_currency",
+   "subject": "HM-2025-545314",
+   "predicate": "HAS_COVERAGE",
+   "object": "public_liability"
+  }
+ ],
+ "declared_total": null
+}

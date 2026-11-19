@@ -1,0 +1,34 @@
+{
+  "gold extractions (detector logic only) / dev": {
+    "labelled": 7,
+    "found": 7,
+    "missed": 0,
+    "corroborating": 1,
+    "true_unlabelled": 0,
+    "false_flags": 0
+  },
+  "gold extractions (detector logic only) / test": {
+    "labelled": 7,
+    "found": 7,
+    "missed": 0,
+    "corroborating": 0,
+    "true_unlabelled": 2,
+    "false_flags": 0
+  },
+  "best model's extractions (end to end) / dev": {
+    "labelled": 7,
+    "found": 7,
+    "missed": 0,
+    "corroborating": 1,
+    "true_unlabelled": 0,
+    "false_flags": 2
+  },
+  "best model's extractions (end to end) / test": {
+    "labelled": 7,
+    "found": 7,
+    "missed": 0,
+    "corroborating": 0,
+    "true_unlabelled": 2,
+    "false_flags": 2
+  }
+}

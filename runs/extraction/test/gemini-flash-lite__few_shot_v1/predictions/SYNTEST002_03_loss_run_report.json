@@ -1,0 +1,90 @@
+{
+ "doc_id": "SYNTEST002_03_loss_run_report",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_03_loss_run_report",
+   "role": "insurer",
+   "name": "Blackwood Assurance",
+   "abn": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_03_loss_run_report",
+   "role": "insured",
+   "name": "Southerly Brewing Pty Ltd",
+   "abn": "61 335 248 705"
+  }
+ ],
+ "policies": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_03_loss_run_report",
+   "policy_number": "BA-2026-151831",
+   "premium": null
+  }
+ ],
+ "coverages": [],
+ "locations": [],
+ "claims": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_03_loss_run_report",
+   "claim_no": "CL-2022-53957",
+   "loss_date": "2022-02-16",
+   "reported_date": "2022-02-24",
+   "category": "Motor Collision",
+   "status": "Closed",
+   "incurred": 69921.0
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_03_loss_run_report",
+   "claim_no": "CL-2025-99029",
+   "loss_date": "2028-02-18",
+   "reported_date": "2025-08-29",
+   "category": "Liability Notification",
+   "status": "Open",
+   "incurred": 78023.0
+  }
+ ],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_03_loss_run_report",
+   "kind": "valuation_date",
+   "date": "2026-02-17"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_03_loss_run_report",
+   "subject": "BA-2026-151831",
+   "predicate": "HAS_INSURED",
+   "object": "Southerly Brewing Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_03_loss_run_report",
+   "subject": "BA-2026-151831",
+   "predicate": "ISSUED_BY",
+   "object": "Blackwood Assurance"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_03_loss_run_report",
+   "subject": "BA-2026-151831",
+   "predicate": "HAS_CLAIM",
+   "object": "CL-2022-53957"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_03_loss_run_report",
+   "subject": "BA-2026-151831",
+   "predicate": "HAS_CLAIM",
+   "object": "CL-2025-99029"
+  }
+ ],
+ "declared_total": null
+}

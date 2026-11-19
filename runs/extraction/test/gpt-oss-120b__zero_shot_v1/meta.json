@@ -1,0 +1,33 @@
+{
+  "model": "gpt-oss-120b",
+  "model_id": "openai/gpt-oss-120b",
+  "provider": "groq",
+  "prompt": "zero_shot_v1",
+  "split": "test",
+  "n_docs": 19,
+  "valid_first_try": 17,
+  "valid_after_retry": 2,
+  "salvaged_or_failed": 0,
+  "prompt_tokens": 25351,
+  "completion_tokens": 12439,
+  "llm_latency_s": 48.7,
+  "timestamp": "2026-11-21T11:04:51+00:00",
+  "summary": {
+    "real/strict": {
+      "entity_macro_f1": 0.8701173222912354,
+      "relation_macro_f1": 0.8809523809523809
+    },
+    "real/lenient": {
+      "entity_macro_f1": 0.8701173222912354,
+      "relation_macro_f1": 0.8809523809523809
+    },
+    "synthetic/strict": {
+      "entity_macro_f1": 0.9780009564801531,
+      "relation_macro_f1": 0.9619047619047619
+    },
+    "synthetic/lenient": {
+      "entity_macro_f1": 0.9780009564801531,
+      "relation_macro_f1": 0.9619047619047619
+    }
+  }
+}

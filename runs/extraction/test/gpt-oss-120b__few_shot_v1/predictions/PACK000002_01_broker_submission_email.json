@@ -1,0 +1,33 @@
+{
+ "doc_id": "PACK000002_01_broker_submission_email",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_01_broker_submission_email",
+   "role": "insured",
+   "name": "Tide Gym Pty Ltd",
+   "abn": null
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_01_broker_submission_email",
+   "role": "broker",
+   "name": "Summit Risk Brokers Pty Ltd",
+   "abn": null
+  }
+ ],
+ "policies": [],
+ "coverages": [],
+ "locations": [],
+ "claims": [],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_01_broker_submission_email",
+   "kind": "policy_start",
+   "date": "2025-12-02"
+  }
+ ],
+ "relationships": [],
+ "declared_total": null
+}

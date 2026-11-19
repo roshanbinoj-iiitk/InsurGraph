@@ -1,0 +1,110 @@
+{
+ "doc_id": "SYNTEST001_04_certificate_of_currency",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_04_certificate_of_currency",
+   "role": "insured",
+   "name": "Copperleaf Bakery Pty Ltd",
+   "abn": "25 035 839 482"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_04_certificate_of_currency",
+   "role": "insurer",
+   "name": "Harbourline Mutual",
+   "abn": null
+  }
+ ],
+ "policies": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_04_certificate_of_currency",
+   "policy_number": "HM-2026-695998",
+   "premium": null
+  }
+ ],
+ "coverages": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_04_certificate_of_currency",
+   "coverage_type": "motor",
+   "limit": 500000.0,
+   "deductible": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_04_certificate_of_currency",
+   "coverage_type": "property",
+   "limit": 5000000.0,
+   "deductible": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_04_certificate_of_currency",
+   "coverage_type": "public_liability",
+   "limit": 5000000.0,
+   "deductible": null
+  }
+ ],
+ "locations": [],
+ "claims": [],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_04_certificate_of_currency",
+   "kind": "certificate_date",
+   "date": "2026-06-18"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_04_certificate_of_currency",
+   "kind": "policy_start",
+   "date": "2026-06-19"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_04_certificate_of_currency",
+   "kind": "policy_end",
+   "date": "2027-06-18"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_04_certificate_of_currency",
+   "subject": "HM-2026-695998",
+   "predicate": "HAS_INSURED",
+   "object": "Copperleaf Bakery Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_04_certificate_of_currency",
+   "subject": "HM-2026-695998",
+   "predicate": "ISSUED_BY",
+   "object": "Harbourline Mutual"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_04_certificate_of_currency",
+   "subject": "HM-2026-695998",
+   "predicate": "HAS_COVERAGE",
+   "object": "motor"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_04_certificate_of_currency",
+   "subject": "HM-2026-695998",
+   "predicate": "HAS_COVERAGE",
+   "object": "property"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_04_certificate_of_currency",
+   "subject": "HM-2026-695998",
+   "predicate": "HAS_COVERAGE",
+   "object": "public_liability"
+  }
+ ],
+ "declared_total": null
+}

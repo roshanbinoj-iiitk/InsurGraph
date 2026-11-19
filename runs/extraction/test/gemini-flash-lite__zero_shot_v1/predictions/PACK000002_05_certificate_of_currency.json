@@ -1,0 +1,131 @@
+{
+ "doc_id": "PACK000002_05_certificate_of_currency",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_05_certificate_of_currency",
+   "role": "insurer",
+   "name": "Southern Cross Commercial Underwriters Pty Ltd",
+   "abn": null
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_05_certificate_of_currency",
+   "role": "insured",
+   "name": "Tide Gym Pty Ltd",
+   "abn": "21 275 287 720"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_05_certificate_of_currency",
+   "role": "interested_party",
+   "name": "Compass Enterprises Pty Ltd",
+   "abn": null
+  }
+ ],
+ "policies": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_05_certificate_of_currency",
+   "policy_number": "SC-2025-372491",
+   "premium": null
+  }
+ ],
+ "coverages": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_05_certificate_of_currency",
+   "coverage_type": "public_liability",
+   "limit": 20000000.0,
+   "deductible": null
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_05_certificate_of_currency",
+   "coverage_type": "property",
+   "limit": 1000000.0,
+   "deductible": null
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_05_certificate_of_currency",
+   "coverage_type": "business_interruption",
+   "limit": 500000.0,
+   "deductible": null
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_05_certificate_of_currency",
+   "coverage_type": "management_liability",
+   "limit": 5000000.0,
+   "deductible": null
+  }
+ ],
+ "locations": [],
+ "claims": [],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_05_certificate_of_currency",
+   "kind": "certificate_date",
+   "date": "2025-11-30"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_05_certificate_of_currency",
+   "kind": "policy_start",
+   "date": "2025-12-02"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_05_certificate_of_currency",
+   "kind": "policy_end",
+   "date": "2026-12-01"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_05_certificate_of_currency",
+   "subject": "SC-2025-372491",
+   "predicate": "ISSUED_BY",
+   "object": "Southern Cross Commercial Underwriters Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_05_certificate_of_currency",
+   "subject": "SC-2025-372491",
+   "predicate": "HAS_INSURED",
+   "object": "Tide Gym Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_05_certificate_of_currency",
+   "subject": "SC-2025-372491",
+   "predicate": "HAS_COVERAGE",
+   "object": "public_liability"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_05_certificate_of_currency",
+   "subject": "SC-2025-372491",
+   "predicate": "HAS_COVERAGE",
+   "object": "property"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_05_certificate_of_currency",
+   "subject": "SC-2025-372491",
+   "predicate": "HAS_COVERAGE",
+   "object": "business_interruption"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_05_certificate_of_currency",
+   "subject": "SC-2025-372491",
+   "predicate": "HAS_COVERAGE",
+   "object": "management_liability"
+  }
+ ],
+ "declared_total": null
+}

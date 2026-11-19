@@ -242,6 +242,11 @@ def evaluate_run(
     }
     if wall_s is not None:
         tags["wall_s"] = round(wall_s, 1)
+    elif (run_dir / "meta.json").exists():  # re-scoring an existing run: keep when/how long it ran
+        prev = json.loads((run_dir / "meta.json").read_text())
+        tags["timestamp"] = prev.get("timestamp", tags["timestamp"])
+        if "wall_s" in prev:
+            tags["wall_s"] = prev["wall_s"]
     write_report(run_dir, cards, tags)
     summary = {
         k: {"entity_macro_f1": c.entity_macro_f1, "relation_macro_f1": c.relation_macro_f1} for k, c in cards.items()

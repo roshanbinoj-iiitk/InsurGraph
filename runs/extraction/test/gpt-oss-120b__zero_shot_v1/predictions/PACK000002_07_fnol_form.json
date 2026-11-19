@@ -1,0 +1,94 @@
+{
+ "doc_id": "PACK000002_07_fnol_form",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_07_fnol_form",
+   "role": "insured",
+   "name": "Tide Gym Pty Ltd",
+   "abn": "21 275 287 720"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_07_fnol_form",
+   "role": "insurer",
+   "name": "Southern Cross Commercial Underwriters Pty Ltd",
+   "abn": null
+  }
+ ],
+ "policies": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_07_fnol_form",
+   "policy_number": "SC-2025-372491",
+   "premium": null
+  }
+ ],
+ "coverages": [],
+ "locations": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_07_fnol_form",
+   "location_no": null,
+   "address": "336 Riverside Pde, Launceston TAS 7250",
+   "total_declared_value": null,
+   "currency": null
+  }
+ ],
+ "claims": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_07_fnol_form",
+   "claim_no": "CLM-2025-13385",
+   "loss_date": "2025-03-18",
+   "reported_date": "2025-04-01",
+   "category": "Liability Notification",
+   "status": "First Notification",
+   "incurred": 46544.0
+  }
+ ],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_07_fnol_form",
+   "kind": "policy_start",
+   "date": "2025-12-02"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_07_fnol_form",
+   "kind": "policy_end",
+   "date": "2026-12-01"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_07_fnol_form",
+   "kind": "report_date",
+   "date": "2025-04-01"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_07_fnol_form",
+   "subject": "SC-2025-372491",
+   "predicate": "HAS_INSURED",
+   "object": "Tide Gym Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_07_fnol_form",
+   "subject": "SC-2025-372491",
+   "predicate": "ISSUED_BY",
+   "object": "Southern Cross Commercial Underwriters Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_07_fnol_form",
+   "subject": "SC-2025-372491",
+   "predicate": "HAS_CLAIM",
+   "object": "CLM-2025-13385"
+  }
+ ],
+ "declared_total": null
+}

@@ -1,0 +1,143 @@
+{
+ "doc_id": "PACK000002_03_statement_of_values",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_03_statement_of_values",
+   "role": "broker",
+   "name": "Summit Risk Brokers Pty Ltd",
+   "abn": null
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_03_statement_of_values",
+   "role": "insured",
+   "name": "Tide Gym Pty Ltd",
+   "abn": "21275287720"
+  }
+ ],
+ "policies": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_03_statement_of_values",
+   "policy_number": "SC-2025-372491",
+   "premium": null
+  }
+ ],
+ "coverages": [],
+ "locations": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_03_statement_of_values",
+   "location_no": 1,
+   "address": "336 Riverside Pde, Launceston TAS 7250",
+   "total_declared_value": 3811622.0,
+   "currency": "AUD"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_03_statement_of_values",
+   "location_no": 2,
+   "address": "Unit 5, 365 Commerce Pde, Mount Gambier SA 5290",
+   "total_declared_value": 2753854.0,
+   "currency": "AUD"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_03_statement_of_values",
+   "location_no": 3,
+   "address": "317 Parkland Way, Penrith NSW 2750",
+   "total_declared_value": 4720584.0,
+   "currency": "AUD"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_03_statement_of_values",
+   "location_no": 4,
+   "address": "138 Parkland Rd, Penrith NSW 2750",
+   "total_declared_value": 1731597.0,
+   "currency": "AUD"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_03_statement_of_values",
+   "location_no": 5,
+   "address": "Unit 17, 12 Crossing Ct, Hobart TAS 7000",
+   "total_declared_value": 1618271.0,
+   "currency": "AUD"
+  }
+ ],
+ "claims": [],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_03_statement_of_values",
+   "kind": "policy_start",
+   "date": "2025-12-02"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_03_statement_of_values",
+   "kind": "policy_end",
+   "date": "2026-12-26"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_03_statement_of_values",
+   "kind": "valuation_date",
+   "date": "2025-10-03"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_03_statement_of_values",
+   "subject": "SC-2025-372491",
+   "predicate": "HAS_INSURED",
+   "object": "Tide Gym Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_03_statement_of_values",
+   "subject": "SC-2025-372491",
+   "predicate": "PLACED_BY",
+   "object": "Summit Risk Brokers Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_03_statement_of_values",
+   "subject": "SC-2025-372491",
+   "predicate": "COVERS_LOCATION",
+   "object": "1"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_03_statement_of_values",
+   "subject": "SC-2025-372491",
+   "predicate": "COVERS_LOCATION",
+   "object": "2"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_03_statement_of_values",
+   "subject": "SC-2025-372491",
+   "predicate": "COVERS_LOCATION",
+   "object": "3"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_03_statement_of_values",
+   "subject": "SC-2025-372491",
+   "predicate": "COVERS_LOCATION",
+   "object": "4"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_03_statement_of_values",
+   "subject": "SC-2025-372491",
+   "predicate": "COVERS_LOCATION",
+   "object": "5"
+  }
+ ],
+ "declared_total": 15383103.0
+}

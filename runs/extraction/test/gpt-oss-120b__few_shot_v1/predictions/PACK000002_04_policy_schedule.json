@@ -1,0 +1,132 @@
+{
+ "doc_id": "PACK000002_04_policy_schedule",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_04_policy_schedule",
+   "role": "insurer",
+   "name": "Southern Cross Commercial Underwriters Pty Ltd",
+   "abn": null
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_04_policy_schedule",
+   "role": "insured",
+   "name": "Tide Gym Pty Ltd",
+   "abn": "21 275 287 720"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_04_policy_schedule",
+   "role": "broker",
+   "name": "Summit Risk Brokers Pty Ltd",
+   "abn": null
+  }
+ ],
+ "policies": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_04_policy_schedule",
+   "policy_number": "SC-2025-372491",
+   "premium": 13020.0
+  }
+ ],
+ "coverages": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_04_policy_schedule",
+   "coverage_type": "public_liability",
+   "limit": 10000000.0,
+   "deductible": 10000.0
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_04_policy_schedule",
+   "coverage_type": "property",
+   "limit": 2000000.0,
+   "deductible": 1000.0
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_04_policy_schedule",
+   "coverage_type": "business_interruption",
+   "limit": 500000.0,
+   "deductible": 10000.0
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_04_policy_schedule",
+   "coverage_type": "management_liability",
+   "limit": 5000000.0,
+   "deductible": 10000.0
+  }
+ ],
+ "locations": [],
+ "claims": [],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_04_policy_schedule",
+   "kind": "policy_start",
+   "date": "2025-12-02"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_04_policy_schedule",
+   "kind": "policy_end",
+   "date": "2026-12-01"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_04_policy_schedule",
+   "subject": "SC-2025-372491",
+   "predicate": "HAS_INSURED",
+   "object": "Tide Gym Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_04_policy_schedule",
+   "subject": "SC-2025-372491",
+   "predicate": "ISSUED_BY",
+   "object": "Southern Cross Commercial Underwriters Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_04_policy_schedule",
+   "subject": "SC-2025-372491",
+   "predicate": "PLACED_BY",
+   "object": "Summit Risk Brokers Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_04_policy_schedule",
+   "subject": "SC-2025-372491",
+   "predicate": "HAS_COVERAGE",
+   "object": "public_liability"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_04_policy_schedule",
+   "subject": "SC-2025-372491",
+   "predicate": "HAS_COVERAGE",
+   "object": "property"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_04_policy_schedule",
+   "subject": "SC-2025-372491",
+   "predicate": "HAS_COVERAGE",
+   "object": "business_interruption"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_04_policy_schedule",
+   "subject": "SC-2025-372491",
+   "predicate": "HAS_COVERAGE",
+   "object": "management_liability"
+  }
+ ],
+ "declared_total": null
+}

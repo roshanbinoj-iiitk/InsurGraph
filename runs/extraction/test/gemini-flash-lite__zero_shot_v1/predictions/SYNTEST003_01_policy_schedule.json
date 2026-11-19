@@ -1,0 +1,179 @@
+{
+ "doc_id": "SYNTEST003_01_policy_schedule",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_01_policy_schedule",
+   "role": "insured",
+   "name": "Ironbark Joinery Pty Ltd",
+   "abn": "47 078 274 587"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_01_policy_schedule",
+   "role": "broker",
+   "name": "Anchor Point Risk Services Pty Ltd",
+   "abn": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_01_policy_schedule",
+   "role": "insurer",
+   "name": "Harbourline Mutual Insurance Ltd",
+   "abn": null
+  }
+ ],
+ "policies": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_01_policy_schedule",
+   "policy_number": "HM-2025-545314",
+   "premium": 33112.0
+  }
+ ],
+ "coverages": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_01_policy_schedule",
+   "coverage_type": "business_interruption",
+   "limit": 250000.0,
+   "deductible": 10000.0
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_01_policy_schedule",
+   "coverage_type": "property",
+   "limit": 2000000.0,
+   "deductible": 1000.0
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_01_policy_schedule",
+   "coverage_type": "public_liability",
+   "limit": 5000000.0,
+   "deductible": 2500.0
+  }
+ ],
+ "locations": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_01_policy_schedule",
+   "location_no": 1,
+   "address": "Unit 17, 111 Wattle Pde, Bendigo VIC 3550",
+   "total_declared_value": null,
+   "currency": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_01_policy_schedule",
+   "location_no": 2,
+   "address": "138 Foundry Ave, Bendigo VIC 3550",
+   "total_declared_value": null,
+   "currency": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_01_policy_schedule",
+   "location_no": 3,
+   "address": "186 Railway St, Bunbury WA 6230",
+   "total_declared_value": null,
+   "currency": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_01_policy_schedule",
+   "location_no": 4,
+   "address": "38 Mill St, Bendigo VIC 3550",
+   "total_declared_value": null,
+   "currency": null
+  }
+ ],
+ "claims": [],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_01_policy_schedule",
+   "kind": "policy_start",
+   "date": "2025-11-23"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_01_policy_schedule",
+   "kind": "policy_end",
+   "date": "2026-11-22"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_01_policy_schedule",
+   "subject": "HM-2025-545314",
+   "predicate": "HAS_INSURED",
+   "object": "Ironbark Joinery Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_01_policy_schedule",
+   "subject": "HM-2025-545314",
+   "predicate": "ISSUED_BY",
+   "object": "Harbourline Mutual Insurance Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_01_policy_schedule",
+   "subject": "HM-2025-545314",
+   "predicate": "PLACED_BY",
+   "object": "Anchor Point Risk Services Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_01_policy_schedule",
+   "subject": "HM-2025-545314",
+   "predicate": "HAS_COVERAGE",
+   "object": "business_interruption"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_01_policy_schedule",
+   "subject": "HM-2025-545314",
+   "predicate": "HAS_COVERAGE",
+   "object": "property"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_01_policy_schedule",
+   "subject": "HM-2025-545314",
+   "predicate": "HAS_COVERAGE",
+   "object": "public_liability"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_01_policy_schedule",
+   "subject": "HM-2025-545314",
+   "predicate": "COVERS_LOCATION",
+   "object": "1"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_01_policy_schedule",
+   "subject": "HM-2025-545314",
+   "predicate": "COVERS_LOCATION",
+   "object": "2"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_01_policy_schedule",
+   "subject": "HM-2025-545314",
+   "predicate": "COVERS_LOCATION",
+   "object": "3"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_01_policy_schedule",
+   "subject": "HM-2025-545314",
+   "predicate": "COVERS_LOCATION",
+   "object": "4"
+  }
+ ],
+ "declared_total": null
+}

@@ -1,0 +1,107 @@
+{
+ "doc_id": "PACK000002_02_loss_run_report",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_02_loss_run_report",
+   "role": "insurer",
+   "name": "Southern Cross Commercial Underwriters Pty Ltd",
+   "abn": null
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_02_loss_run_report",
+   "role": "insured",
+   "name": "Tide Gym Pty Ltd",
+   "abn": "21 275 287 720"
+  }
+ ],
+ "policies": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_02_loss_run_report",
+   "policy_number": "SC-2025-372491",
+   "premium": null
+  }
+ ],
+ "coverages": [],
+ "locations": [],
+ "claims": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_02_loss_run_report",
+   "claim_no": "CLM-2024-74176",
+   "loss_date": "2024-05-29",
+   "reported_date": "2024-06-15",
+   "category": "Motor",
+   "status": "Closed",
+   "incurred": 9106.0
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_02_loss_run_report",
+   "claim_no": "CLM-2024-94098",
+   "loss_date": "2024-09-12",
+   "reported_date": "2024-10-03",
+   "category": "Water Damage",
+   "status": "Closed",
+   "incurred": 61365.0
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_02_loss_run_report",
+   "claim_no": "CLM-2025-13385",
+   "loss_date": "2025-03-18",
+   "reported_date": "2025-04-01",
+   "category": "Liability Notification",
+   "status": "Closed",
+   "incurred": 46544.0
+  }
+ ],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_02_loss_run_report",
+   "kind": "valuation_date",
+   "date": "2025-10-03"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_02_loss_run_report",
+   "subject": "SC-2025-372491",
+   "predicate": "HAS_INSURED",
+   "object": "Tide Gym Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_02_loss_run_report",
+   "subject": "SC-2025-372491",
+   "predicate": "ISSUED_BY",
+   "object": "Southern Cross Commercial Underwriters Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_02_loss_run_report",
+   "subject": "SC-2025-372491",
+   "predicate": "HAS_CLAIM",
+   "object": "CLM-2024-74176"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_02_loss_run_report",
+   "subject": "SC-2025-372491",
+   "predicate": "HAS_CLAIM",
+   "object": "CLM-2024-94098"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_02_loss_run_report",
+   "subject": "SC-2025-372491",
+   "predicate": "HAS_CLAIM",
+   "object": "CLM-2025-13385"
+  }
+ ],
+ "declared_total": null
+}

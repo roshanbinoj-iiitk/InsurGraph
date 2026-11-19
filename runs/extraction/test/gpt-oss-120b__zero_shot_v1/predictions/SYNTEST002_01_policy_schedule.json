@@ -1,0 +1,179 @@
+{
+ "doc_id": "SYNTEST002_01_policy_schedule",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_01_policy_schedule",
+   "role": "insured",
+   "name": "Southerly Brewing Pty Ltd",
+   "abn": "61 335 248 705"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_01_policy_schedule",
+   "role": "insurer",
+   "name": "Blackwood Assurance Limited",
+   "abn": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_01_policy_schedule",
+   "role": "broker",
+   "name": "Northshore Risk Partners Pty Ltd",
+   "abn": null
+  }
+ ],
+ "policies": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_01_policy_schedule",
+   "policy_number": "BA-2026-151831",
+   "premium": 37672.0
+  }
+ ],
+ "coverages": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_01_policy_schedule",
+   "coverage_type": "property",
+   "limit": 7500000.0,
+   "deductible": 2500.0
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_01_policy_schedule",
+   "coverage_type": "cyber",
+   "limit": 2000000.0,
+   "deductible": 10000.0
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_01_policy_schedule",
+   "coverage_type": "public_liability",
+   "limit": 10000000.0,
+   "deductible": 5000.0
+  }
+ ],
+ "locations": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_01_policy_schedule",
+   "location_no": 1,
+   "address": "70 Foundry Rd, Mount Gambier SA 5290",
+   "total_declared_value": null,
+   "currency": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_01_policy_schedule",
+   "location_no": 2,
+   "address": "30 Bridge Ct, Devonport TAS 7310",
+   "total_declared_value": null,
+   "currency": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_01_policy_schedule",
+   "location_no": 3,
+   "address": "280 Quarry Ct, Cairns QLD 4870",
+   "total_declared_value": null,
+   "currency": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_01_policy_schedule",
+   "location_no": 4,
+   "address": "293 Bridge Ct, Newcastle NSW 2300",
+   "total_declared_value": null,
+   "currency": null
+  }
+ ],
+ "claims": [],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_01_policy_schedule",
+   "kind": "policy_start",
+   "date": "2026-04-11"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_01_policy_schedule",
+   "kind": "policy_end",
+   "date": "2027-04-10"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_01_policy_schedule",
+   "subject": "BA-2026-151831",
+   "predicate": "HAS_INSURED",
+   "object": "Southerly Brewing Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_01_policy_schedule",
+   "subject": "BA-2026-151831",
+   "predicate": "ISSUED_BY",
+   "object": "Blackwood Assurance Limited"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_01_policy_schedule",
+   "subject": "BA-2026-151831",
+   "predicate": "PLACED_BY",
+   "object": "Northshore Risk Partners Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_01_policy_schedule",
+   "subject": "BA-2026-151831",
+   "predicate": "HAS_COVERAGE",
+   "object": "property"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_01_policy_schedule",
+   "subject": "BA-2026-151831",
+   "predicate": "HAS_COVERAGE",
+   "object": "cyber"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_01_policy_schedule",
+   "subject": "BA-2026-151831",
+   "predicate": "HAS_COVERAGE",
+   "object": "public_liability"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_01_policy_schedule",
+   "subject": "BA-2026-151831",
+   "predicate": "COVERS_LOCATION",
+   "object": "1"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_01_policy_schedule",
+   "subject": "BA-2026-151831",
+   "predicate": "COVERS_LOCATION",
+   "object": "2"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_01_policy_schedule",
+   "subject": "BA-2026-151831",
+   "predicate": "COVERS_LOCATION",
+   "object": "3"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_01_policy_schedule",
+   "subject": "BA-2026-151831",
+   "predicate": "COVERS_LOCATION",
+   "object": "4"
+  }
+ ],
+ "declared_total": null
+}

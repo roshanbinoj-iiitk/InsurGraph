@@ -1,0 +1,159 @@
+{
+ "doc_id": "PACK000002_06_insurance_application",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_06_insurance_application",
+   "role": "insured",
+   "name": "Tide Gym Pty Ltd",
+   "abn": "21 275 287 720"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_06_insurance_application",
+   "role": "prior_insurer",
+   "name": "Verity Insurance Underwriting Agency",
+   "abn": null
+  }
+ ],
+ "policies": [],
+ "coverages": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_06_insurance_application",
+   "coverage_type": "public_liability",
+   "limit": null,
+   "deductible": null
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_06_insurance_application",
+   "coverage_type": "property",
+   "limit": null,
+   "deductible": null
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_06_insurance_application",
+   "coverage_type": "business_interruption",
+   "limit": null,
+   "deductible": null
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_06_insurance_application",
+   "coverage_type": "management_liability",
+   "limit": null,
+   "deductible": null
+  }
+ ],
+ "locations": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_06_insurance_application",
+   "location_no": null,
+   "address": "336 Riverside Pde, Launceston TAS 7250",
+   "total_declared_value": null,
+   "currency": null
+  }
+ ],
+ "claims": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_06_insurance_application",
+   "claim_no": "CLM-2024-74176",
+   "loss_date": "2024-05-29",
+   "reported_date": null,
+   "category": "Motor Collision",
+   "status": "Closed",
+   "incurred": 9106.0
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_06_insurance_application",
+   "claim_no": "CLM-2024-94098",
+   "loss_date": "2024-09-12",
+   "reported_date": null,
+   "category": "Water Damage",
+   "status": "Closed",
+   "incurred": 61365.0
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_06_insurance_application",
+   "claim_no": "CLM-2025-13385",
+   "loss_date": "2025-03-18",
+   "reported_date": null,
+   "category": "Liability Notification",
+   "status": "Closed",
+   "incurred": 46544.0
+  }
+ ],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_06_insurance_application",
+   "kind": "policy_start",
+   "date": "2025-12-02"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "PACK000002_06_insurance_application",
+   "subject": "PACK000002",
+   "predicate": "HAS_INSURED",
+   "object": "Tide Gym Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_06_insurance_application",
+   "subject": "PACK000002",
+   "predicate": "HAS_COVERAGE",
+   "object": "public_liability"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_06_insurance_application",
+   "subject": "PACK000002",
+   "predicate": "HAS_COVERAGE",
+   "object": "property"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_06_insurance_application",
+   "subject": "PACK000002",
+   "predicate": "HAS_COVERAGE",
+   "object": "business_interruption"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_06_insurance_application",
+   "subject": "PACK000002",
+   "predicate": "HAS_COVERAGE",
+   "object": "management_liability"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_06_insurance_application",
+   "subject": "PACK000002",
+   "predicate": "HAS_CLAIM",
+   "object": "CLM-2024-74176"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_06_insurance_application",
+   "subject": "PACK000002",
+   "predicate": "HAS_CLAIM",
+   "object": "CLM-2024-94098"
+  },
+  {
+   "page": 1,
+   "source_doc": "PACK000002_06_insurance_application",
+   "subject": "PACK000002",
+   "predicate": "HAS_CLAIM",
+   "object": "CLM-2025-13385"
+  }
+ ],
+ "declared_total": null
+}

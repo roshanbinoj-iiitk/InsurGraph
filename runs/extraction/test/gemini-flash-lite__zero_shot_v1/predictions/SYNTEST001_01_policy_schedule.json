@@ -1,0 +1,134 @@
+{
+ "doc_id": "SYNTEST001_01_policy_schedule",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_01_policy_schedule",
+   "role": "insured",
+   "name": "Copperleaf Bakery Pty Ltd",
+   "abn": "25 035 839 482"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_01_policy_schedule",
+   "role": "broker",
+   "name": "Highline Brokers Pty Ltd",
+   "abn": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_01_policy_schedule",
+   "role": "insurer",
+   "name": "Harbourline Mutual Insurance Ltd",
+   "abn": null
+  }
+ ],
+ "policies": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_01_policy_schedule",
+   "policy_number": "HM-2026-695998",
+   "premium": 22475.0
+  }
+ ],
+ "coverages": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_01_policy_schedule",
+   "coverage_type": "motor",
+   "limit": 500000.0,
+   "deductible": 2000.0
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_01_policy_schedule",
+   "coverage_type": "property",
+   "limit": 5000000.0,
+   "deductible": 1000.0
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_01_policy_schedule",
+   "coverage_type": "public_liability",
+   "limit": 5000000.0,
+   "deductible": 2500.0
+  }
+ ],
+ "locations": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_01_policy_schedule",
+   "location_no": 1,
+   "address": "199 Quarry Pde, Devonport TAS 7310",
+   "total_declared_value": null,
+   "currency": null
+  }
+ ],
+ "claims": [],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_01_policy_schedule",
+   "kind": "policy_start",
+   "date": "2026-06-19"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_01_policy_schedule",
+   "kind": "policy_end",
+   "date": "2027-06-18"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_01_policy_schedule",
+   "subject": "HM-2026-695998",
+   "predicate": "HAS_INSURED",
+   "object": "Copperleaf Bakery Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_01_policy_schedule",
+   "subject": "HM-2026-695998",
+   "predicate": "PLACED_BY",
+   "object": "Highline Brokers Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_01_policy_schedule",
+   "subject": "HM-2026-695998",
+   "predicate": "ISSUED_BY",
+   "object": "Harbourline Mutual Insurance Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_01_policy_schedule",
+   "subject": "HM-2026-695998",
+   "predicate": "HAS_COVERAGE",
+   "object": "motor"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_01_policy_schedule",
+   "subject": "HM-2026-695998",
+   "predicate": "HAS_COVERAGE",
+   "object": "property"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_01_policy_schedule",
+   "subject": "HM-2026-695998",
+   "predicate": "HAS_COVERAGE",
+   "object": "public_liability"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_01_policy_schedule",
+   "subject": "HM-2026-695998",
+   "predicate": "COVERS_LOCATION",
+   "object": "1"
+  }
+ ],
+ "declared_total": null
+}

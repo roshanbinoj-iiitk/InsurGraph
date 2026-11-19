@@ -1,0 +1,244 @@
+[
+ {
+  "pack": "PACK000001",
+  "flag_type": "claim_attribute_mismatch",
+  "node": "claim:CLM-2020-27293",
+  "attribute": "loss_date",
+  "observations": {
+   "PACK000001_02_loss_run_report": "2027-10-13",
+   "PACK000001_06_insurance_application": "2020-09-24"
+  },
+  "detail": "CLM-2020-27293: loss_date differs across documents"
+ },
+ {
+  "pack": "PACK000001",
+  "flag_type": "loss_date_outside_policy_period",
+  "node": "claim:CLM-2020-27293",
+  "attribute": "loss_date",
+  "observations": {
+   "PACK000001_02_loss_run_report": "2027-10-13"
+  },
+  "detail": "CLM-2020-27293: loss 2027-10-13 after reported 2020-10-02 / valuation 2025-05-13"
+ },
+ {
+  "pack": "PACK000001",
+  "flag_type": "claim_attribute_mismatch",
+  "node": "claim:CLM-2022-56562",
+  "attribute": "reported_date",
+  "observations": {
+   "PACK000001_02_loss_run_report": "2022-03-12",
+   "PACK000001_08_claim_report": "2022-04-08"
+  },
+  "detail": "CLM-2022-56562: reported_date differs across documents"
+ },
+ {
+  "pack": "PACK000002",
+  "flag_type": "abn_formatting_inconsistency",
+  "node": "party:tide gym",
+  "attribute": "abn",
+  "observations": {
+   "PACK000002_02_loss_run_report": "21 275 287 720",
+   "PACK000002_03_statement_of_values": "21275287720",
+   "PACK000002_04_policy_schedule": "21 275 287 720",
+   "PACK000002_05_certificate_of_currency": "21 275 287 720",
+   "PACK000002_06_insurance_application": "21 275 287 720",
+   "PACK000002_07_fnol_form": "21 275 287 720"
+  },
+  "detail": "ABN 21275287720 printed in 2 formats"
+ },
+ {
+  "pack": "PACK000002",
+  "flag_type": "policy_period_mismatch",
+  "node": "policy:SC-2025-372491",
+  "attribute": "policy_end",
+  "observations": {
+   "PACK000002_03_statement_of_values": "2026-12-26",
+   "PACK000002_04_policy_schedule": "2026-12-01",
+   "PACK000002_05_certificate_of_currency": "2026-12-01",
+   "PACK000002_07_fnol_form": "2026-12-01"
+  },
+  "detail": "SC-2025-372491: policy_end differs across documents"
+ },
+ {
+  "pack": "PACK000002",
+  "flag_type": "limit_mismatch",
+  "node": "coverage:SC-2025-372491|public_liability",
+  "attribute": "limit",
+  "observations": {
+   "PACK000002_04_policy_schedule": 10000000.0,
+   "PACK000002_05_certificate_of_currency": 20000000.0
+  },
+  "detail": "public_liability: limit differs across documents"
+ },
+ {
+  "pack": "PACK000002",
+  "flag_type": "limit_mismatch",
+  "node": "coverage:SC-2025-372491|property",
+  "attribute": "limit",
+  "observations": {
+   "PACK000002_04_policy_schedule": 2000000.0,
+   "PACK000002_05_certificate_of_currency": 1000000.0
+  },
+  "detail": "property: limit differs across documents"
+ },
+ {
+  "pack": "SYNDEV001",
+  "flag_type": "abn_formatting_inconsistency",
+  "node": "party:tallowwood engineering",
+  "attribute": "abn",
+  "observations": {
+   "SYNDEV001_01_policy_schedule": "77 220 074 584",
+   "SYNDEV001_02_statement_of_values": "77220074584",
+   "SYNDEV001_03_loss_run_report": "77 220 074 584",
+   "SYNDEV001_04_certificate_of_currency": "77 220 074 584"
+  },
+  "detail": "ABN 77220074584 printed in 2 formats"
+ },
+ {
+  "pack": "SYNDEV002",
+  "flag_type": "abn_formatting_inconsistency",
+  "node": "party:copperleaf engineering",
+  "attribute": "abn",
+  "observations": {
+   "SYNDEV002_01_policy_schedule": "92 762 501 283",
+   "SYNDEV002_02_statement_of_values": "92762501283",
+   "SYNDEV002_03_loss_run_report": "92 762 501 283",
+   "SYNDEV002_04_certificate_of_currency": "92 762 501 283"
+  },
+  "detail": "ABN 92762501283 printed in 2 formats"
+ },
+ {
+  "pack": "SYNDEV002",
+  "flag_type": "loss_date_outside_policy_period",
+  "node": "claim:CL-2022-67031",
+  "attribute": "loss_date",
+  "observations": {
+   "SYNDEV002_03_loss_run_report": "2027-07-12"
+  },
+  "detail": "CL-2022-67031: loss 2027-07-12 after reported 2022-12-12 / valuation 2025-11-23"
+ },
+ {
+  "pack": "SYNTEST001",
+  "flag_type": "loss_date_outside_policy_period",
+  "node": "claim:CL-2023-65427",
+  "attribute": "loss_date",
+  "observations": {
+   "SYNTEST001_03_loss_run_report": "2028-10-06"
+  },
+  "detail": "CL-2023-65427: loss 2028-10-06 after reported 2023-04-23 / valuation 2026-05-07"
+ },
+ {
+  "pack": "SYNTEST002",
+  "flag_type": "limit_mismatch",
+  "node": "coverage:BA-2026-151831|public_liability",
+  "attribute": "limit",
+  "observations": {
+   "SYNTEST002_01_policy_schedule": 10000000.0,
+   "SYNTEST002_04_certificate_of_currency": 5000000.0
+  },
+  "detail": "public_liability: limit differs across documents"
+ },
+ {
+  "pack": "SYNTEST002",
+  "flag_type": "loss_date_outside_policy_period",
+  "node": "claim:CL-2025-99029",
+  "attribute": "loss_date",
+  "observations": {
+   "SYNTEST002_03_loss_run_report": "2028-02-18"
+  },
+  "detail": "CL-2025-99029: loss 2028-02-18 after reported 2025-08-29 / valuation 2026-02-17"
+ },
+ {
+  "pack": "SYNTEST003",
+  "flag_type": "loss_date_outside_policy_period",
+  "node": "claim:CL-2021-21003",
+  "attribute": "loss_date",
+  "observations": {
+   "SYNTEST003_03_loss_run_report": "2027-11-22"
+  },
+  "detail": "CL-2021-21003: loss 2027-11-22 after reported 2022-01-10 / valuation 2025-10-29"
+ },
+ {
+  "pack": "PACK000001",
+  "flag_type": "currency_mismatch",
+  "node": "location:PACK000001|1",
+  "attribute": "currency",
+  "observations": {
+   "PACK000001_03_statement_of_values": "USD"
+  },
+  "detail": "Unit 15, 433 Pioneer Bvd, Townsville QLD 4810: value declared in USD, pack currency AUD"
+ },
+ {
+  "pack": "PACK000001",
+  "flag_type": "policy_number_mismatch",
+  "node": "pack:PACK000001",
+  "attribute": "policy_number",
+  "observations": {
+   "PACK000001_06_insurance_application": "APP-PACK000001-5326",
+   "PACK000001_07_fnol_form": "PI-2025-981268",
+   "PACK000001_03_statement_of_values": "PI-2025-981268",
+   "PACK000001_04_policy_schedule": "PI-2025-981268",
+   "PACK000001_08_claim_report": "PI-2025-981268",
+   "PACK000001_02_loss_run_report": "PI-2025-981268"
+  },
+  "detail": "2 different policy numbers in one submission"
+ },
+ {
+  "pack": "PACK000002",
+  "flag_type": "policy_number_mismatch",
+  "node": "pack:PACK000002",
+  "attribute": "policy_number",
+  "observations": {
+   "PACK000002_06_insurance_application": "APP-PACK000002-5125",
+   "PACK000002_02_loss_run_report": "SC-2025-372491",
+   "PACK000002_07_fnol_form": "SC-2025-372491",
+   "PACK000002_03_statement_of_values": "SC-2025-372491",
+   "PACK000002_04_policy_schedule": "SC-2025-372491",
+   "PACK000002_05_certificate_of_currency": "SC-2025-372491"
+  },
+  "detail": "2 different policy numbers in one submission"
+ },
+ {
+  "pack": "PACK000002",
+  "flag_type": "sov_total_mismatch",
+  "node": "doc:PACK000002_03_statement_of_values",
+  "attribute": "declared_total",
+  "observations": {
+   "PACK000002_03_statement_of_values": 15383103.0
+  },
+  "detail": "displayed total 15,383,103 != sum of rows 14,635,928"
+ },
+ {
+  "pack": "SYNDEV003",
+  "flag_type": "policy_number_mismatch",
+  "node": "pack:SYNDEV003",
+  "attribute": "policy_number",
+  "observations": {
+   "SYNDEV003_04_certificate_of_currency": "HM-2026-579713",
+   "SYNDEV003_01_policy_schedule": "HM-2026-579731",
+   "SYNDEV003_02_statement_of_values": "HM-2026-579731",
+   "SYNDEV003_03_loss_run_report": "HM-2026-579731"
+  },
+  "detail": "2 different policy numbers in one submission"
+ },
+ {
+  "pack": "SYNDEV003",
+  "flag_type": "sov_total_mismatch",
+  "node": "doc:SYNDEV003_02_statement_of_values",
+  "attribute": "declared_total",
+  "observations": {
+   "SYNDEV003_02_statement_of_values": 5591000.0
+  },
+  "detail": "displayed total 5,591,000 != sum of rows 4,757,000"
+ },
+ {
+  "pack": "SYNTEST003",
+  "flag_type": "currency_mismatch",
+  "node": "location:SYNTEST003|1",
+  "attribute": "currency",
+  "observations": {
+   "SYNTEST003_02_statement_of_values": "USD"
+  },
+  "detail": "Unit 17, 111 Wattle Pde, Bendigo VIC 3550: value declared in USD, pack currency AUD"
+ }
+]

@@ -1,0 +1,128 @@
+{
+ "doc_id": "SYNTEST003_02_statement_of_values",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_02_statement_of_values",
+   "role": "insured",
+   "name": "Ironbark Joinery Pty Ltd",
+   "abn": "47 078 274 587"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_02_statement_of_values",
+   "role": "broker",
+   "name": "Anchor Point Risk Services Pty Ltd",
+   "abn": null
+  }
+ ],
+ "policies": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_02_statement_of_values",
+   "policy_number": "HM-2025-545314",
+   "premium": null
+  }
+ ],
+ "coverages": [],
+ "locations": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_02_statement_of_values",
+   "location_no": 1,
+   "address": "Unit 17, 111 Wattle Pde, Bendigo VIC 3550",
+   "total_declared_value": 5028000.0,
+   "currency": "USD"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_02_statement_of_values",
+   "location_no": 2,
+   "address": "138 Foundry Ave, Bendigo VIC 3550",
+   "total_declared_value": 6721000.0,
+   "currency": "AUD"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_02_statement_of_values",
+   "location_no": 3,
+   "address": "186 Railway St, Bunbury WA 6230",
+   "total_declared_value": 3650000.0,
+   "currency": "AUD"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_02_statement_of_values",
+   "location_no": 4,
+   "address": "38 Mill St, Bendigo VIC 3550",
+   "total_declared_value": 2925000.0,
+   "currency": "AUD"
+  }
+ ],
+ "claims": [],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_02_statement_of_values",
+   "kind": "valuation_date",
+   "date": "2025-10-29"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_02_statement_of_values",
+   "kind": "policy_start",
+   "date": "2025-11-23"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_02_statement_of_values",
+   "kind": "policy_end",
+   "date": "2026-11-22"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_02_statement_of_values",
+   "subject": "HM-2025-545314",
+   "predicate": "PLACED_BY",
+   "object": "Anchor Point Risk Services Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_02_statement_of_values",
+   "subject": "HM-2025-545314",
+   "predicate": "HAS_INSURED",
+   "object": "Ironbark Joinery Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_02_statement_of_values",
+   "subject": "HM-2025-545314",
+   "predicate": "COVERS_LOCATION",
+   "object": "1"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_02_statement_of_values",
+   "subject": "HM-2025-545314",
+   "predicate": "COVERS_LOCATION",
+   "object": "2"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_02_statement_of_values",
+   "subject": "HM-2025-545314",
+   "predicate": "COVERS_LOCATION",
+   "object": "3"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_02_statement_of_values",
+   "subject": "HM-2025-545314",
+   "predicate": "COVERS_LOCATION",
+   "object": "4"
+  }
+ ],
+ "declared_total": 18324000.0
+}

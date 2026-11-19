@@ -1,0 +1,121 @@
+{
+ "doc_id": "SYNTEST002_02_statement_of_values",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_02_statement_of_values",
+   "role": "broker",
+   "name": "Northshore Risk Partners Pty Ltd",
+   "abn": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_02_statement_of_values",
+   "role": "insured",
+   "name": "Southerly Brewing Pty Ltd",
+   "abn": "61 335 248 705"
+  }
+ ],
+ "policies": [],
+ "coverages": [],
+ "locations": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_02_statement_of_values",
+   "location_no": 1,
+   "address": "70 Foundry Rd, Mount Gambier SA 5290",
+   "total_declared_value": 4319000.0,
+   "currency": "A$"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_02_statement_of_values",
+   "location_no": 2,
+   "address": "30 Bridge Ct, Devonport TAS 7310",
+   "total_declared_value": 5621000.0,
+   "currency": "A$"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_02_statement_of_values",
+   "location_no": 3,
+   "address": "280 Quarry Ct, Cairns QLD 4870",
+   "total_declared_value": 5413000.0,
+   "currency": "A$"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_02_statement_of_values",
+   "location_no": 4,
+   "address": "293 Bridge Ct, Newcastle NSW 2300",
+   "total_declared_value": 6170000.0,
+   "currency": "A$"
+  }
+ ],
+ "claims": [],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_02_statement_of_values",
+   "kind": "policy_start",
+   "date": "2026-04-11"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_02_statement_of_values",
+   "kind": "policy_end",
+   "date": "2027-04-10"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_02_statement_of_values",
+   "kind": "valuation_date",
+   "date": "2026-02-17"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_02_statement_of_values",
+   "subject": "BA-2026-151831",
+   "predicate": "HAS_INSURED",
+   "object": "Southerly Brewing Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_02_statement_of_values",
+   "subject": "BA-2026-151831",
+   "predicate": "PLACED_BY",
+   "object": "Northshore Risk Partners Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_02_statement_of_values",
+   "subject": "BA-2026-151831",
+   "predicate": "COVERS_LOCATION",
+   "object": "1"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_02_statement_of_values",
+   "subject": "BA-2026-151831",
+   "predicate": "COVERS_LOCATION",
+   "object": "2"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_02_statement_of_values",
+   "subject": "BA-2026-151831",
+   "predicate": "COVERS_LOCATION",
+   "object": "3"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST002_02_statement_of_values",
+   "subject": "BA-2026-151831",
+   "predicate": "COVERS_LOCATION",
+   "object": "4"
+  }
+ ],
+ "declared_total": 21523000.0
+}

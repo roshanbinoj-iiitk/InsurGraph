@@ -1,0 +1,33 @@
+{
+  "model": "gemini-flash-lite",
+  "model_id": "gemini-3.5-flash-lite",
+  "provider": "gemini",
+  "prompt": "few_shot_v1",
+  "split": "test",
+  "n_docs": 19,
+  "valid_first_try": 16,
+  "valid_after_retry": 3,
+  "salvaged_or_failed": 0,
+  "prompt_tokens": 41277,
+  "completion_tokens": 7574,
+  "llm_latency_s": 64.0,
+  "timestamp": "2026-11-21T11:04:51+00:00",
+  "summary": {
+    "real/strict": {
+      "entity_macro_f1": 0.9327165209518151,
+      "relation_macro_f1": 0.9060606060606061
+    },
+    "real/lenient": {
+      "entity_macro_f1": 0.9327165209518151,
+      "relation_macro_f1": 0.9060606060606061
+    },
+    "synthetic/strict": {
+      "entity_macro_f1": 0.9682539682539683,
+      "relation_macro_f1": 1.0
+    },
+    "synthetic/lenient": {
+      "entity_macro_f1": 0.9682539682539683,
+      "relation_macro_f1": 1.0
+    }
+  }
+}

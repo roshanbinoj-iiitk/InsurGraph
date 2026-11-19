@@ -1,0 +1,90 @@
+{
+ "doc_id": "SYNTEST003_03_loss_run_report",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_03_loss_run_report",
+   "role": "insurer",
+   "name": "Harbourline Mutual",
+   "abn": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_03_loss_run_report",
+   "role": "insured",
+   "name": "Ironbark Joinery Pty Ltd",
+   "abn": "47 078 274 587"
+  }
+ ],
+ "policies": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_03_loss_run_report",
+   "policy_number": "HM-2025-545314",
+   "premium": null
+  }
+ ],
+ "coverages": [],
+ "locations": [],
+ "claims": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_03_loss_run_report",
+   "claim_no": "CL-2021-21003",
+   "loss_date": "2027-11-22",
+   "reported_date": "2022-01-10",
+   "category": "Water Damage",
+   "status": "Closed",
+   "incurred": 30767.0
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_03_loss_run_report",
+   "claim_no": "CL-2022-85206",
+   "loss_date": "2022-04-17",
+   "reported_date": "2022-05-03",
+   "category": "Motor Collision",
+   "status": "Closed",
+   "incurred": 80981.0
+  }
+ ],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_03_loss_run_report",
+   "kind": "valuation_date",
+   "date": "2025-10-29"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_03_loss_run_report",
+   "subject": "HM-2025-545314",
+   "predicate": "HAS_INSURED",
+   "object": "Ironbark Joinery Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_03_loss_run_report",
+   "subject": "HM-2025-545314",
+   "predicate": "ISSUED_BY",
+   "object": "Harbourline Mutual"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_03_loss_run_report",
+   "subject": "HM-2025-545314",
+   "predicate": "HAS_CLAIM",
+   "object": "CL-2021-21003"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST003_03_loss_run_report",
+   "subject": "HM-2025-545314",
+   "predicate": "HAS_CLAIM",
+   "object": "CL-2022-85206"
+  }
+ ],
+ "declared_total": null
+}

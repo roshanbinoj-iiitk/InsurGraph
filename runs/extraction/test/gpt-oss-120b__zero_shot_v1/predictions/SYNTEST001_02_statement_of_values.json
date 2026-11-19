@@ -1,0 +1,83 @@
+{
+ "doc_id": "SYNTEST001_02_statement_of_values",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_02_statement_of_values",
+   "role": "insured",
+   "name": "Copperleaf Bakery Pty Ltd",
+   "abn": "25 035 839 482"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_02_statement_of_values",
+   "role": "broker",
+   "name": "Highline Brokers Pty Ltd",
+   "abn": null
+  }
+ ],
+ "policies": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_02_statement_of_values",
+   "policy_number": "HM-2026-695998",
+   "premium": null
+  }
+ ],
+ "coverages": [],
+ "locations": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_02_statement_of_values",
+   "location_no": 1,
+   "address": "199 Quarry Pde, Devonport TAS 7310",
+   "total_declared_value": 3979000.0,
+   "currency": "AUD"
+  }
+ ],
+ "claims": [],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_02_statement_of_values",
+   "kind": "policy_start",
+   "date": "2026-06-19"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_02_statement_of_values",
+   "kind": "policy_end",
+   "date": "2027-06-18"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_02_statement_of_values",
+   "kind": "valuation_date",
+   "date": "2026-05-07"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_02_statement_of_values",
+   "subject": "HM-2026-695998",
+   "predicate": "HAS_INSURED",
+   "object": "Copperleaf Bakery Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_02_statement_of_values",
+   "subject": "HM-2026-695998",
+   "predicate": "PLACED_BY",
+   "object": "Highline Brokers Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_02_statement_of_values",
+   "subject": "HM-2026-695998",
+   "predicate": "COVERS_LOCATION",
+   "object": "1"
+  }
+ ],
+ "declared_total": 3979000.0
+}

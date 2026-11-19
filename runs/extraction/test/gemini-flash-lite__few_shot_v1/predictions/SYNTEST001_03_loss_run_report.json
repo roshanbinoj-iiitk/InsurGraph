@@ -1,0 +1,124 @@
+{
+ "doc_id": "SYNTEST001_03_loss_run_report",
+ "parties": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_03_loss_run_report",
+   "role": "insurer",
+   "name": "Harbourline Mutual",
+   "abn": null
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_03_loss_run_report",
+   "role": "insured",
+   "name": "Copperleaf Bakery Pty Ltd",
+   "abn": "25 035 839 482"
+  }
+ ],
+ "policies": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_03_loss_run_report",
+   "policy_number": "HM-2026-695998",
+   "premium": null
+  }
+ ],
+ "coverages": [],
+ "locations": [],
+ "claims": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_03_loss_run_report",
+   "claim_no": "CL-2022-23144",
+   "loss_date": "2022-06-21",
+   "reported_date": "2022-07-15",
+   "category": "Property Damage",
+   "status": "Open",
+   "incurred": 48552.0
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_03_loss_run_report",
+   "claim_no": "CL-2023-65427",
+   "loss_date": "2028-10-06",
+   "reported_date": "2023-04-23",
+   "category": "Liability Notification",
+   "status": "Open",
+   "incurred": 19765.0
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_03_loss_run_report",
+   "claim_no": "CL-2024-83222",
+   "loss_date": "2024-06-06",
+   "reported_date": "2024-06-11",
+   "category": "Storm Damage",
+   "status": "Closed",
+   "incurred": 71646.0
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_03_loss_run_report",
+   "claim_no": "CL-2025-44798",
+   "loss_date": "2025-07-25",
+   "reported_date": "2025-08-16",
+   "category": "Theft",
+   "status": "Open",
+   "incurred": 56333.0
+  }
+ ],
+ "dates": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_03_loss_run_report",
+   "kind": "valuation_date",
+   "date": "2026-05-07"
+  }
+ ],
+ "relationships": [
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_03_loss_run_report",
+   "subject": "HM-2026-695998",
+   "predicate": "ISSUED_BY",
+   "object": "Harbourline Mutual"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_03_loss_run_report",
+   "subject": "HM-2026-695998",
+   "predicate": "HAS_INSURED",
+   "object": "Copperleaf Bakery Pty Ltd"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_03_loss_run_report",
+   "subject": "HM-2026-695998",
+   "predicate": "HAS_CLAIM",
+   "object": "CL-2022-23144"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_03_loss_run_report",
+   "subject": "HM-2026-695998",
+   "predicate": "HAS_CLAIM",
+   "object": "CL-2023-65427"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_03_loss_run_report",
+   "subject": "HM-2026-695998",
+   "predicate": "HAS_CLAIM",
+   "object": "CL-2024-83222"
+  },
+  {
+   "page": 1,
+   "source_doc": "SYNTEST001_03_loss_run_report",
+   "subject": "HM-2026-695998",
+   "predicate": "HAS_CLAIM",
+   "object": "CL-2025-44798"
+  }
+ ],
+ "declared_total": null
+}

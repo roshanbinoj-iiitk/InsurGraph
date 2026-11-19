@@ -1,0 +1,786 @@
+[
+ {
+  "a": "Greenleaf Property Services Pty Ltd",
+  "b": "Meridian Claims Services",
+  "same": false,
+  "layer": "llm",
+  "score": 54.90196078431372
+ },
+ {
+  "a": "Greenleaf Property Services Pty Ltd",
+  "b": "Pinewood Insurance Underwriting Agency",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 33.84615384615384
+ },
+ {
+  "a": "Greenleaf Property Services Pty Ltd",
+  "b": "Ridgeline Insurance Brokers Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 37.03703703703704
+ },
+ {
+  "a": "Greenleaf Property Services Pty Ltd",
+  "b": "Verity Insurance Underwriting Agency",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 38.095238095238095
+ },
+ {
+  "a": "Meridian Claims Services",
+  "b": "Pinewood Insurance Underwriting Agency",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 32.25806451612904
+ },
+ {
+  "a": "Meridian Claims Services",
+  "b": "Ridgeline Insurance Brokers Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 35.294117647058826
+ },
+ {
+  "a": "Meridian Claims Services",
+  "b": "Verity Insurance Underwriting Agency",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 43.333333333333336
+ },
+ {
+  "a": "Pinewood Insurance Underwriting Agency",
+  "b": "Ridgeline Insurance Brokers Pty Ltd",
+  "same": false,
+  "layer": "llm",
+  "score": 52.30769230769231
+ },
+ {
+  "a": "Pinewood Insurance Underwriting Agency",
+  "b": "Verity Insurance Underwriting Agency",
+  "same": false,
+  "layer": "llm",
+  "score": 89.23076923076923
+ },
+ {
+  "a": "Ridgeline Insurance Brokers Pty Ltd",
+  "b": "Verity Insurance Underwriting Agency",
+  "same": false,
+  "layer": "llm",
+  "score": 53.96825396825397
+ },
+ {
+  "a": "Compass Enterprises Pty Ltd",
+  "b": "Southern Cross Commercial Underwriters Pty Ltd",
+  "same": false,
+  "layer": "llm",
+  "score": 52.63157894736842
+ },
+ {
+  "a": "Compass Enterprises Pty Ltd",
+  "b": "Summit Risk Brokers Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 36.8421052631579
+ },
+ {
+  "a": "Compass Enterprises Pty Ltd",
+  "b": "Tide Gym Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 37.03703703703704
+ },
+ {
+  "a": "Compass Enterprises Pty Ltd",
+  "b": "Verity Insurance Underwriting Agency",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 32.727272727272734
+ },
+ {
+  "a": "Southern Cross Commercial Underwriters Pty Ltd",
+  "b": "Summit Risk Brokers Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 38.59649122807018
+ },
+ {
+  "a": "Southern Cross Commercial Underwriters Pty Ltd",
+  "b": "Tide Gym Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 21.73913043478261
+ },
+ {
+  "a": "Southern Cross Commercial Underwriters Pty Ltd",
+  "b": "Verity Insurance Underwriting Agency",
+  "same": false,
+  "layer": "llm",
+  "score": 51.351351351351354
+ },
+ {
+  "a": "Summit Risk Brokers Pty Ltd",
+  "b": "Tide Gym Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 14.81481481481481
+ },
+ {
+  "a": "Summit Risk Brokers Pty Ltd",
+  "b": "Verity Insurance Underwriting Agency",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 29.090909090909093
+ },
+ {
+  "a": "Tide Gym Pty Ltd",
+  "b": "Verity Insurance Underwriting Agency",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 27.272727272727266
+ },
+ {
+  "a": "Highline Brokers Pty Ltd",
+  "b": "Kookaburra Commercial",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 27.02702702702703
+ },
+ {
+  "a": "Highline Brokers Pty Ltd",
+  "b": "Kookaburra Commercial Insurance Co",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 34.04255319148936
+ },
+ {
+  "a": "Highline Brokers Pty Ltd",
+  "b": "Tallowwood Engineering Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 26.315789473684205
+ },
+ {
+  "a": "Kookaburra Commercial",
+  "b": "Kookaburra Commercial Insurance Co",
+  "same": true,
+  "layer": "fuzzy",
+  "score": 100.0
+ },
+ {
+  "a": "Kookaburra Commercial",
+  "b": "Tallowwood Engineering Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 32.55813953488372
+ },
+ {
+  "a": "Kookaburra Commercial Insurance Co",
+  "b": "Tallowwood Engineering Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 30.188679245283012
+ },
+ {
+  "a": "Copperleaf Engineering Pty Ltd",
+  "b": "Meridian Specialty",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 30.0
+ },
+ {
+  "a": "Copperleaf Engineering Pty Ltd",
+  "b": "Meridian Specialty Underwriters Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 37.735849056603776
+ },
+ {
+  "a": "Copperleaf Engineering Pty Ltd",
+  "b": "Pacific Crest Brokers Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 32.55813953488372
+ },
+ {
+  "a": "Meridian Specialty",
+  "b": "Meridian Specialty Underwriters Pty Ltd",
+  "same": true,
+  "layer": "fuzzy",
+  "score": 100.0
+ },
+ {
+  "a": "Meridian Specialty",
+  "b": "Pacific Crest Brokers Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 35.8974358974359
+ },
+ {
+  "a": "Meridian Specialty Underwriters Pty Ltd",
+  "b": "Pacific Crest Brokers Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 30.769230769230774
+ },
+ {
+  "a": "Granite Peak Veterinary Pty Ltd",
+  "b": "Harbourline Mutual",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 29.268292682926827
+ },
+ {
+  "a": "Granite Peak Veterinary Pty Ltd",
+  "b": "Harbourline Mutual Insurance Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 31.372549019607845
+ },
+ {
+  "a": "Granite Peak Veterinary Pty Ltd",
+  "b": "Highline Brokers Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 30.769230769230774
+ },
+ {
+  "a": "Harbourline Mutual",
+  "b": "Harbourline Mutual Insurance Ltd",
+  "same": true,
+  "layer": "fuzzy",
+  "score": 100.0
+ },
+ {
+  "a": "Harbourline Mutual",
+  "b": "Highline Brokers Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 41.1764705882353
+ },
+ {
+  "a": "Harbourline Mutual Insurance Ltd",
+  "b": "Highline Brokers Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 31.818181818181813
+ },
+ {
+  "a": "Copperleaf Bakery Pty Ltd",
+  "b": "Harbourline Mutual",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 40.0
+ },
+ {
+  "a": "Copperleaf Bakery Pty Ltd",
+  "b": "Harbourline Mutual Insurance Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 31.111111111111114
+ },
+ {
+  "a": "Copperleaf Bakery Pty Ltd",
+  "b": "Highline Brokers Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 42.42424242424242
+ },
+ {
+  "a": "Harbourline Mutual",
+  "b": "Harbourline Mutual Insurance Ltd",
+  "same": true,
+  "layer": "fuzzy",
+  "score": 100.0
+ },
+ {
+  "a": "Harbourline Mutual",
+  "b": "Highline Brokers Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 41.1764705882353
+ },
+ {
+  "a": "Harbourline Mutual Insurance Ltd",
+  "b": "Highline Brokers Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 31.818181818181813
+ },
+ {
+  "a": "Blackwood Assurance",
+  "b": "Blackwood Assurance Limited",
+  "same": true,
+  "layer": "normalise",
+  "score": 100.0
+ },
+ {
+  "a": "Blackwood Assurance",
+  "b": "Northshore Risk Partners Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 32.55813953488372
+ },
+ {
+  "a": "Blackwood Assurance",
+  "b": "Southerly Brewing Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 22.22222222222223
+ },
+ {
+  "a": "Blackwood Assurance Limited",
+  "b": "Northshore Risk Partners Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 32.55813953488372
+ },
+ {
+  "a": "Blackwood Assurance Limited",
+  "b": "Southerly Brewing Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 22.22222222222223
+ },
+ {
+  "a": "Northshore Risk Partners Pty Ltd",
+  "b": "Southerly Brewing Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 29.268292682926827
+ },
+ {
+  "a": "Anchor Point Risk Services Pty Ltd",
+  "b": "Harbourline Mutual",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 27.272727272727266
+ },
+ {
+  "a": "Anchor Point Risk Services Pty Ltd",
+  "b": "Harbourline Mutual Insurance Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 40.74074074074074
+ },
+ {
+  "a": "Anchor Point Risk Services Pty Ltd",
+  "b": "Ironbark Joinery Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 38.095238095238095
+ },
+ {
+  "a": "Harbourline Mutual",
+  "b": "Harbourline Mutual Insurance Ltd",
+  "same": true,
+  "layer": "fuzzy",
+  "score": 100.0
+ },
+ {
+  "a": "Harbourline Mutual",
+  "b": "Ironbark Joinery Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 35.294117647058826
+ },
+ {
+  "a": "Harbourline Mutual Insurance Ltd",
+  "b": "Ironbark Joinery Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 31.818181818181813
+ },
+ {
+  "a": "Greenleaf Property Services Pty Ltd",
+  "b": "Meridian Claims Services",
+  "same": false,
+  "layer": "llm",
+  "score": 54.90196078431372
+ },
+ {
+  "a": "Greenleaf Property Services Pty Ltd",
+  "b": "Pinewood Insurance Underwriting Agency",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 33.84615384615384
+ },
+ {
+  "a": "Greenleaf Property Services Pty Ltd",
+  "b": "Ridgeline Insurance Brokers Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 37.03703703703704
+ },
+ {
+  "a": "Greenleaf Property Services Pty Ltd",
+  "b": "Verity Insurance Underwriting Agency",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 38.095238095238095
+ },
+ {
+  "a": "Meridian Claims Services",
+  "b": "Pinewood Insurance Underwriting Agency",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 32.25806451612904
+ },
+ {
+  "a": "Meridian Claims Services",
+  "b": "Ridgeline Insurance Brokers Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 35.294117647058826
+ },
+ {
+  "a": "Meridian Claims Services",
+  "b": "Verity Insurance Underwriting Agency",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 43.333333333333336
+ },
+ {
+  "a": "Pinewood Insurance Underwriting Agency",
+  "b": "Ridgeline Insurance Brokers Pty Ltd",
+  "same": false,
+  "layer": "llm",
+  "score": 52.30769230769231
+ },
+ {
+  "a": "Pinewood Insurance Underwriting Agency",
+  "b": "Verity Insurance Underwriting Agency",
+  "same": false,
+  "layer": "llm",
+  "score": 89.23076923076923
+ },
+ {
+  "a": "Ridgeline Insurance Brokers Pty Ltd",
+  "b": "Verity Insurance Underwriting Agency",
+  "same": false,
+  "layer": "llm",
+  "score": 53.96825396825397
+ },
+ {
+  "a": "Compass Enterprises Pty Ltd",
+  "b": "Southern Cross Commercial Underwriters Pty Ltd",
+  "same": false,
+  "layer": "llm",
+  "score": 52.63157894736842
+ },
+ {
+  "a": "Compass Enterprises Pty Ltd",
+  "b": "Summit Risk Brokers Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 36.8421052631579
+ },
+ {
+  "a": "Compass Enterprises Pty Ltd",
+  "b": "Tide Gym Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 37.03703703703704
+ },
+ {
+  "a": "Compass Enterprises Pty Ltd",
+  "b": "Verity Insurance Underwriting Agency",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 32.727272727272734
+ },
+ {
+  "a": "Southern Cross Commercial Underwriters Pty Ltd",
+  "b": "Summit Risk Brokers Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 38.59649122807018
+ },
+ {
+  "a": "Southern Cross Commercial Underwriters Pty Ltd",
+  "b": "Tide Gym Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 21.73913043478261
+ },
+ {
+  "a": "Southern Cross Commercial Underwriters Pty Ltd",
+  "b": "Verity Insurance Underwriting Agency",
+  "same": false,
+  "layer": "llm",
+  "score": 51.351351351351354
+ },
+ {
+  "a": "Summit Risk Brokers Pty Ltd",
+  "b": "Tide Gym Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 14.81481481481481
+ },
+ {
+  "a": "Summit Risk Brokers Pty Ltd",
+  "b": "Verity Insurance Underwriting Agency",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 29.090909090909093
+ },
+ {
+  "a": "Tide Gym Pty Ltd",
+  "b": "Verity Insurance Underwriting Agency",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 27.272727272727266
+ },
+ {
+  "a": "Highline Brokers Pty Ltd",
+  "b": "Kookaburra Commercial",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 27.02702702702703
+ },
+ {
+  "a": "Highline Brokers Pty Ltd",
+  "b": "Kookaburra Commercial Insurance Co",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 34.04255319148936
+ },
+ {
+  "a": "Highline Brokers Pty Ltd",
+  "b": "Tallowwood Engineering Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 26.315789473684205
+ },
+ {
+  "a": "Kookaburra Commercial",
+  "b": "Kookaburra Commercial Insurance Co",
+  "same": true,
+  "layer": "fuzzy",
+  "score": 100.0
+ },
+ {
+  "a": "Kookaburra Commercial",
+  "b": "Tallowwood Engineering Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 32.55813953488372
+ },
+ {
+  "a": "Kookaburra Commercial Insurance Co",
+  "b": "Tallowwood Engineering Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 30.188679245283012
+ },
+ {
+  "a": "Copperleaf Engineering Pty Ltd",
+  "b": "Meridian Specialty",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 30.0
+ },
+ {
+  "a": "Copperleaf Engineering Pty Ltd",
+  "b": "Meridian Specialty Underwriters Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 37.735849056603776
+ },
+ {
+  "a": "Copperleaf Engineering Pty Ltd",
+  "b": "Pacific Crest Brokers Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 32.55813953488372
+ },
+ {
+  "a": "Meridian Specialty",
+  "b": "Meridian Specialty Underwriters Pty Ltd",
+  "same": true,
+  "layer": "fuzzy",
+  "score": 100.0
+ },
+ {
+  "a": "Meridian Specialty",
+  "b": "Pacific Crest Brokers Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 35.8974358974359
+ },
+ {
+  "a": "Meridian Specialty Underwriters Pty Ltd",
+  "b": "Pacific Crest Brokers Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 30.769230769230774
+ },
+ {
+  "a": "Granite Peak Veterinary Pty Ltd",
+  "b": "Harbourline Mutual",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 29.268292682926827
+ },
+ {
+  "a": "Granite Peak Veterinary Pty Ltd",
+  "b": "Harbourline Mutual Insurance Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 31.372549019607845
+ },
+ {
+  "a": "Granite Peak Veterinary Pty Ltd",
+  "b": "Highline Brokers Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 30.769230769230774
+ },
+ {
+  "a": "Harbourline Mutual",
+  "b": "Harbourline Mutual Insurance Ltd",
+  "same": true,
+  "layer": "fuzzy",
+  "score": 100.0
+ },
+ {
+  "a": "Harbourline Mutual",
+  "b": "Highline Brokers Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 41.1764705882353
+ },
+ {
+  "a": "Harbourline Mutual Insurance Ltd",
+  "b": "Highline Brokers Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 31.818181818181813
+ },
+ {
+  "a": "Copperleaf Bakery Pty Ltd",
+  "b": "Harbourline Mutual",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 40.0
+ },
+ {
+  "a": "Copperleaf Bakery Pty Ltd",
+  "b": "Harbourline Mutual Insurance Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 31.111111111111114
+ },
+ {
+  "a": "Copperleaf Bakery Pty Ltd",
+  "b": "Highline Brokers Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 42.42424242424242
+ },
+ {
+  "a": "Harbourline Mutual",
+  "b": "Harbourline Mutual Insurance Ltd",
+  "same": true,
+  "layer": "fuzzy",
+  "score": 100.0
+ },
+ {
+  "a": "Harbourline Mutual",
+  "b": "Highline Brokers Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 41.1764705882353
+ },
+ {
+  "a": "Harbourline Mutual Insurance Ltd",
+  "b": "Highline Brokers Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 31.818181818181813
+ },
+ {
+  "a": "Blackwood Assurance",
+  "b": "Blackwood Assurance Limited",
+  "same": true,
+  "layer": "normalise",
+  "score": 100.0
+ },
+ {
+  "a": "Blackwood Assurance",
+  "b": "Northshore Risk Partners Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 32.55813953488372
+ },
+ {
+  "a": "Blackwood Assurance",
+  "b": "Southerly Brewing Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 22.22222222222223
+ },
+ {
+  "a": "Blackwood Assurance Limited",
+  "b": "Northshore Risk Partners Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 32.55813953488372
+ },
+ {
+  "a": "Blackwood Assurance Limited",
+  "b": "Southerly Brewing Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 22.22222222222223
+ },
+ {
+  "a": "Northshore Risk Partners Pty Ltd",
+  "b": "Southerly Brewing Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 29.268292682926827
+ },
+ {
+  "a": "Anchor Point Risk Services Pty Ltd",
+  "b": "Harbourline Mutual",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 27.272727272727266
+ },
+ {
+  "a": "Anchor Point Risk Services Pty Ltd",
+  "b": "Harbourline Mutual Insurance Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 40.74074074074074
+ },
+ {
+  "a": "Anchor Point Risk Services Pty Ltd",
+  "b": "Ironbark Joinery Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 38.095238095238095
+ },
+ {
+  "a": "Harbourline Mutual",
+  "b": "Harbourline Mutual Insurance Ltd",
+  "same": true,
+  "layer": "fuzzy",
+  "score": 100.0
+ },
+ {
+  "a": "Harbourline Mutual",
+  "b": "Ironbark Joinery Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 35.294117647058826
+ },
+ {
+  "a": "Harbourline Mutual Insurance Ltd",
+  "b": "Ironbark Joinery Pty Ltd",
+  "same": false,
+  "layer": "fuzzy",
+  "score": 31.818181818181813
+ }
+]

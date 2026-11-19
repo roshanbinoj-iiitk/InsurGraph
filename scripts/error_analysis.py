@@ -26,7 +26,7 @@ def categorise(e: dict, spurious_by_doc: dict) -> str:
         if t == "claim" and set(f) <= {"category", "status"}:
             return "claim label wording"
         if t == "location" and "currency" in f:
-            return "currency of a row missed"
+            return "row currency wrong (symbol not normalised)"
         if t == "location" and set(f) <= {"address"}:
             return "address wording / wrap"
         if t in ("coverage",) and set(f) & {"limit", "deductible"}:

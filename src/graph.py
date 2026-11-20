@@ -341,7 +341,7 @@ def detect_inconsistencies(G: nx.MultiDiGraph) -> list[dict]:
                 docs = {o["doc"] for o in observations(G, p)} | {
                     d["source_doc"] for _, _, d in G.out_edges(p, data=True) if d.get("source_doc")
                 }
-                for doc in docs:
+                for doc in sorted(docs):
                     obs[doc] = G.nodes[p]["label"]
             flag(
                 pack,

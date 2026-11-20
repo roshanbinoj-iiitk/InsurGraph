@@ -185,7 +185,9 @@ pytest
 The final run outputs (predictions, logs, metrics, flags, RAG answers) are committed in `runs/`, and
 `runs/summary.md` is the generated results summary. The LLM cache (`cache/`) and `.env` are
 git-ignored. Calls use temperature 0, but hosted models are not guaranteed to be deterministic, so a
-fresh full run can differ slightly; `--offline` reproduces the tables exactly.
+fresh full run can differ slightly; `--offline` reproduces the tables exactly. Without a
+`GEMINI_API_KEY`, entity resolution falls back to its string layers (logged in
+`runs/detector/resolution_log_best.json`); on the committed extractions this changes no decision.
 
 **Free-tier budget used for the reported run** (successful calls, from the cache): ~245K tokens on
 Gemini over 141 calls (extraction, RAG, entity resolution) and ~164K tokens on Groq over 92 calls

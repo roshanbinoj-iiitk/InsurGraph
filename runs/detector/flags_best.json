@@ -175,11 +175,11 @@
   "attribute": "policy_number",
   "observations": {
    "PACK000001_06_insurance_application": "APP-PACK000001-5326",
-   "PACK000001_07_fnol_form": "PI-2025-981268",
+   "PACK000001_02_loss_run_report": "PI-2025-981268",
    "PACK000001_03_statement_of_values": "PI-2025-981268",
    "PACK000001_04_policy_schedule": "PI-2025-981268",
-   "PACK000001_08_claim_report": "PI-2025-981268",
-   "PACK000001_02_loss_run_report": "PI-2025-981268"
+   "PACK000001_07_fnol_form": "PI-2025-981268",
+   "PACK000001_08_claim_report": "PI-2025-981268"
   },
   "detail": "2 different policy numbers in one submission"
  },
@@ -191,10 +191,10 @@
   "observations": {
    "PACK000002_06_insurance_application": "APP-PACK000002-5125",
    "PACK000002_02_loss_run_report": "SC-2025-372491",
-   "PACK000002_07_fnol_form": "SC-2025-372491",
    "PACK000002_03_statement_of_values": "SC-2025-372491",
    "PACK000002_04_policy_schedule": "SC-2025-372491",
-   "PACK000002_05_certificate_of_currency": "SC-2025-372491"
+   "PACK000002_05_certificate_of_currency": "SC-2025-372491",
+   "PACK000002_07_fnol_form": "SC-2025-372491"
   },
   "detail": "2 different policy numbers in one submission"
  },
